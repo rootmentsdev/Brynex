@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply DM Sans globally to all elements including Bootstrap */
+*,
+*::before,
+*::after {
+  font-family: 'DM Sans', sans-serif !important;
+}
+
+/* Ensure Font Awesome icons use their own font */
+i[class*="fa-"],
+i[class^="fa-"],
+.fa,
+.fas,
+.far,
+.fal,
+.fab,
+.fa-solid,
+.fa-regular,
+.fa-light,
+.fa-brands {
+  font-family: "Font Awesome 6 Free", "Font Awesome 6 Pro", "Font Awesome 6 Brands", "Font Awesome 6 Sharp", "Font Awesome 7", "Font Awesome" !important;
+  font-weight: 900 !important;
+  font-style: normal !important;
+  font-variant: normal !important;
+  text-rendering: auto !important;
+  line-height: 1 !important;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  font-family: 'DM Sans', sans-serif !important;
+}
+
+/* Override Bootstrap default fonts */
+html,
+body,
+div,
+span,
+h1, h2, h3, h4, h5, h6,
+p,
+a,
+button,
+input,
+textarea,
+select,
+label,
+li,
+ul,
+ol,
+nav,
+header,
+footer,
+section,
+article,
+aside,
+main {
+  font-family: 'DM Sans', sans-serif !important;
+}
+
+/* Bootstrap specific overrides */
+.btn,
+.form-control,
+.form-label,
+.navbar,
+.nav-link,
+.dropdown-menu,
+.dropdown-item,
+.card,
+.modal,
+.alert {
+  font-family: 'DM Sans', sans-serif !important;
+}
+
+
