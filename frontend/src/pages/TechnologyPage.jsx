@@ -187,7 +187,7 @@ const TechnologyPage = () => {
                     marginTop: "6px",
                   }}
                 >
-                  RootLMS is a powerful learning management system developed by Brynex Team, designed to deliver training and assessments, track staff progress, and enhance performance across all store locations.
+                  RootLMS is a powerful learning management system developed by Brynex Tech Team, designed to deliver training and assessments, track staff progress, and enhance performance across all store locations.
                 </span>
               </h5>
 
@@ -205,7 +205,7 @@ const TechnologyPage = () => {
                     marginTop: "8px",
                   }}
                 >
-                  RootLMS is a powerful learning management system developed by Brynex Team, designed to deliver training and assessments, track staff progress, and enhance performance across all store locations.
+                  RootLMS is a powerful learning management system developed by Brynex Tech Team, designed to deliver training and assessments, track staff progress, and enhance performance across all store locations.
                 </p>
               </div>
             </Col>
@@ -230,7 +230,7 @@ const TechnologyPage = () => {
                     marginTop: "6px",
                   }}
                 >
-                  HRMS is a comprehensive human resource management system developed by Brynex Team, enabling HR managers to manage employee data, attendance, performance, and reports with efficiency and accuracy.
+                  HRMS is a comprehensive human resource management system developed by Brynex Tech Team, enabling HR managers to manage employee data, attendance, performance, and reports with efficiency and accuracy.
                 </span>
               </h5>
 
@@ -248,7 +248,7 @@ const TechnologyPage = () => {
                     marginTop: "8px",
                   }}
                 >
-                  HRMS is a comprehensive human resource management system developed by Brynex Team, enabling HR managers to manage employee data, attendance, performance, and reports with efficiency and accuracy.
+                  HRMS is a comprehensive human resource management system developed by Brynex Tech Team, enabling HR managers to manage employee data, attendance, performance, and reports with efficiency and accuracy.
                 </p>
               </div>
             </Col>
@@ -273,7 +273,7 @@ const TechnologyPage = () => {
                     marginTop: "6px",
                   }}
                 >
-                  ItemSearch is an intelligent store tool developed by Brynex Team, allowing staff to instantly check product booking status and ensure smooth coordination in the rental process across all branches.
+                  ItemSearch is an intelligent store tool developed by Brynex Tech Team, allowing staff to instantly check product booking status and ensure smooth coordination in the rental process across all branches.
                 </span>
               </h5>
 
@@ -291,7 +291,7 @@ const TechnologyPage = () => {
                     marginTop: "8px",
                   }}
                 >
-                  ItemSearch is an intelligent store tool developed by Brynex Team, allowing staff to instantly check product booking status and ensure smooth coordination in the rental process across all branches.
+                  ItemSearch is an intelligent store tool developed by Brynex Tech Team, allowing staff to instantly check product booking status and ensure smooth coordination in the rental process across all branches.
                 </p>
               </div>
             </Col>
@@ -316,7 +316,7 @@ const TechnologyPage = () => {
                     marginTop: "6px",
                   }}
                 >
-                  AI Business Analyst is an AI-powered analytics platform developed by Brynex Team, helping business owners and individuals uncover insights, analyze data, and make smarter decisions with intelligent automation.
+                  AI Business Analyst is an AI-powered analytics platform developed by Brynex Tech Team, helping business owners and individuals uncover insights, analyze data, and make smarter decisions with intelligent automation.
                 </span>
               </h5>
 
@@ -334,7 +334,7 @@ const TechnologyPage = () => {
                     marginTop: "8px",
                   }}
                 >
-                  AI Business Analyst is an AI-powered analytics platform developed by Brynex Team, helping business owners and individuals uncover insights, analyze data, and make smarter decisions with intelligent automation.
+                  AI Business Analyst is an AI-powered analytics platform developed by Brynex Tech Team, helping business owners and individuals uncover insights, analyze data, and make smarter decisions with intelligent automation.
                 </p>
               </div>
             </Col>
@@ -377,7 +377,7 @@ const TechnologyPage = () => {
                     marginTop: "8px",
                   }}
                 >
-                  Store Insights is a performance tracking platform developed by Brynex Team, enabling cluster managers to view staff efficiency, bookings, targets, and other key metrics with actionable insights.
+                  Store Insights is a performance tracking platform developed by Brynex Tech Team, enabling cluster managers to view staff efficiency, bookings, targets, and other key metrics with actionable insights.
                 </p>
               </div>
             </Col>
