@@ -53,7 +53,7 @@ const BrandPage = () => {
               Premium men's wedding rental and fashion brand offering  suits, tuxedos, and accessories
             </p>
             <div  style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-                <Button  className=' pt-2 pb-2 mb-4  w-md-auto mt-1 d-flex align-items-center justify-content-center  submit-btn-desktop' style={{
+                <Button  className='w-100 pt-2 pb-2 mb-4  w-md-auto mt-1 d-flex align-items-center justify-content-center  submit-btn-desktop' style={{
                     width: 200,
                   
                     borderRadius: 0,
@@ -87,7 +87,7 @@ const BrandPage = () => {
               Kerala's refined bridal and women's wear destination, featuring bridal gowns, partywear, jewelry, and accessories.
             </p>
             <div  style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-                <Button  className='   mb-4 pt-2 pb-2 w-md-auto mt-1 d-flex align-items-center justify-content-center  submit-btn-desktop' style={{
+                <Button  className=' w-100  mb-4 pt-2 pb-2 w-md-auto mt-1 d-flex align-items-center justify-content-center  submit-btn-desktop' style={{
                     width: 200,
                   
                     borderRadius: 0,
@@ -113,7 +113,7 @@ const BrandPage = () => {
               Premium men's wedding rental and fashion brand offering suits,  tuxedos, and accessories
             </p>
             <div  style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-                <Button  className=' mb-4 pt-2 pb-2 w-md-auto mt-1 d-flex align-items-center justify-content-center  submit-btn-desktop' style={{
+                <Button  className='w-100 mb-4 pt-2 pb-2 w-md-auto mt-1 d-flex align-items-center justify-content-center  submit-btn-desktop' style={{
                     width: 200,
                   
                     borderRadius: 0,
