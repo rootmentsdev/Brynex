@@ -108,6 +108,37 @@ const Header = () => {
             backdrop-filter: blur(10px);
           }
 
+          .hamburger-icon {
+            position: relative;
+            overflow: hidden;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+          }
+
+          .hamburger-icon:active {
+            transform: scale(0.95);
+            background-color: rgba(0, 0, 0, 0.1) !important;
+          }
+
+          .hamburger-icon::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.2);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+          }
+
+          .hamburger-icon:active::after {
+            width: 100px;
+            height: 100px;
+            transition: width 0s, height 0s;
+          }
+
           .hamburger-line {
             display: block;
             width: 26px;
@@ -117,6 +148,8 @@ const Header = () => {
             transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
             transform-origin: center;
             border-radius: 2px;
+            position: relative;
+            z-index: 1;
           }
 
           .hamburger-icon.open .hamburger-line:nth-child(1) {
@@ -198,6 +231,31 @@ const Header = () => {
             padding: 16px 20px;
             border-radius: 12px;
             color: #fff;
+            overflow: hidden;
+          }
+
+          .menu-item-link::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+            z-index: 0;
+          }
+
+          .menu-item-link:active::before {
+            width: 300px;
+            height: 300px;
+            transition: width 0s, height 0s;
+          }
+
+          .menu-item-link:active {
+            transform: translateX(12px) scale(0.98);
           }
 
           .menu-item-wrapper:hover .menu-item-link {

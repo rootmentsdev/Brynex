@@ -66,7 +66,7 @@ const AboutPage = () => {
 
     {/* Our Pillars */}
 
-    <div style={{marginTop:"-100px"}} className=' mx-3 ms-md-5 mb-4' >       
+    <div style={{marginTop:"-75px"}} className=' mx-3 ms-md-5 mb-4 ' >       
          <h3 className='mb-5' style={{
           fontSize:"42px",
          

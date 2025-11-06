@@ -49,10 +49,7 @@
   .Header-mobile-ul li a.active-link {
     color: #fff !important;
     font-weight: 700 !important;
-    text-decoration: underline !important;
-    text-decoration-color: #fff !important;
-    text-decoration-thickness: 2px !important;
-    text-underline-offset: 10px !important;
+    text-decoration: none !important;
   }
 }
 

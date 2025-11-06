@@ -59,8 +59,20 @@ const BrandPage = () => {
                     borderRadius: 0,
                     backgroundColor: '#000',
                     border: 'none',
-
-                }}> <Link to="https://suitorguy.com/" className='text-white text-decoration-none'>Visit Website<span className='ms-1'><FaArrowRight /></span></Link></Button>
+                    transition: 'all 0.3s ease',
+                    cursor: 'pointer'
+                }}
+                onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundColor = '#333';
+                    e.currentTarget.style.transform = 'translateY(-2px)';
+                    e.currentTarget.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
+                }}
+                onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = '#000';
+                    e.currentTarget.style.transform = 'translateY(0)';
+                    e.currentTarget.style.boxShadow = 'none';
+                }}
+                > <Link to="https://suitorguy.com/" className='text-white text-decoration-none'>Visit Website<span className='ms-1'><FaArrowRight /></span></Link></Button>
 
             </div>
           </Col>
@@ -93,8 +105,20 @@ const BrandPage = () => {
                     borderRadius: 0,
                     backgroundColor: '#000',
                     border: 'none',
-                   
-                }}> <Link to="/brand" className='text-white text-decoration-none'>Visit Website<span className='ms-1'><FaArrowRight /></span></Link></Button>
+                    transition: 'all 0.3s ease',
+                    cursor: 'pointer'
+                }}
+                onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundColor = '#333';
+                    e.currentTarget.style.transform = 'translateY(-2px)';
+                    e.currentTarget.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
+                }}
+                onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = '#000';
+                    e.currentTarget.style.transform = 'translateY(0)';
+                    e.currentTarget.style.boxShadow = 'none';
+                }}
+                > <Link to="/brand" className='text-white text-decoration-none'>Visit Website<span className='ms-1'><FaArrowRight /></span></Link></Button>
                
             </div>
           </Col>
@@ -119,8 +143,20 @@ const BrandPage = () => {
                     borderRadius: 0,
                     backgroundColor: '#000',
                     border: 'none',
-                   
-                }}> <Link to="https://www.dapprsquad.com/" className='text-white text-decoration-none'>Visit Website<span className='ms-1'><FaArrowRight /></span></Link></Button>
+                    transition: 'all 0.3s ease',
+                    cursor: 'pointer'
+                }}
+                onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundColor = '#333';
+                    e.currentTarget.style.transform = 'translateY(-2px)';
+                    e.currentTarget.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
+                }}
+                onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = '#000';
+                    e.currentTarget.style.transform = 'translateY(0)';
+                    e.currentTarget.style.boxShadow = 'none';
+                }}
+                > <Link to="https://www.dapprsquad.com/" className='text-white text-decoration-none'>Visit Website<span className='ms-1'><FaArrowRight /></span></Link></Button>
                
             </div>
           </Col>

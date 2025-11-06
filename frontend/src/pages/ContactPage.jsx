@@ -380,15 +380,23 @@ const ContactPage = () => {
                     fontWeight:"500",
                     cursor: isSubmitting ? "not-allowed" : "pointer",
                     gap:"8px",
-                    transition:"background-color 0.3s ease",
+                    transition:"all 0.3s ease",
                     marginLeft: 0,
                     opacity: isSubmitting ? 0.7 : 1
                   }}
                   onMouseEnter={(e) => {
-                    if (!isSubmitting) e.target.style.backgroundColor = "#333";
+                    if (!isSubmitting) {
+                      e.currentTarget.style.backgroundColor = "#333";
+                      e.currentTarget.style.transform = "translateY(-2px)";
+                      e.currentTarget.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.2)";
+                    }
                   }}
                   onMouseLeave={(e) => {
-                    if (!isSubmitting) e.target.style.backgroundColor = "#171717";
+                    if (!isSubmitting) {
+                      e.currentTarget.style.backgroundColor = "#171717";
+                      e.currentTarget.style.transform = "translateY(0)";
+                      e.currentTarget.style.boxShadow = "none";
+                    }
                   }}
                 >
                   {isSubmitting ? 'Submitting...' : 'Submit'} {!isSubmitting && <FaArrowRight />}
