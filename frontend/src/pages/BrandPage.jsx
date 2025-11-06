@@ -23,9 +23,9 @@ const BrandPage = () => {
       {/* Title Section */}
       <div className="mx-3 ms-md-5 mt-4" >
         <p className="text-dark" style={{ fontSize: "16px", opacity: "0.6" }}>//Brands</p>
-        <h1 className="mb-3 text-dark fw-normal" style={{ fontSize: "48px" }}>
-          Explore Our <br />
-          Premium Brands
+        <h1 className="mb-3 text-dark fw-normal" style={{ fontSize: "48px", lineHeight: "1.2" }}>
+          <span className='d-block'>Explore Our</span>
+          <span className='d-block'>Premium Brands</span>
         </h1>
       </div>
 

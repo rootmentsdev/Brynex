@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Container } from 'react-bootstrap';
 import { Row, Col, Button } from 'react-bootstrap';
-import { FaUser, FaEnvelope, FaArrowRight } from 'react-icons/fa';
+import { FaUser, FaEnvelope, FaArrowRight, FaTag, FaCommentAlt } from 'react-icons/fa';
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -98,7 +98,7 @@ const ContactPage = () => {
             color: "#171717",
           }}
         >
-          //contact
+          //Contact
         </p>
         <h1
           className="mb-3 mx-3 ms-md-5"
@@ -278,7 +278,7 @@ const ContactPage = () => {
                   Subject <span style={{color:"#ff0000"}}>*</span>
                 </label>
                 <div style={{position:"relative"}}>
-                  <FaEnvelope 
+                  <FaTag 
                     style={{
                       position:"absolute",
                       left:"12px",
@@ -328,7 +328,7 @@ const ContactPage = () => {
                   Message <span style={{color:"#ff0000"}}>*</span>
                 </label>
                 <div style={{position:"relative"}}>
-                  <FaEnvelope 
+                  <FaCommentAlt 
                     style={{
                       position:"absolute",
                       left:"12px",

@@ -73,7 +73,7 @@ const CareersPage = () => {
             color: "#171717",
           }}
         >
-          //careers
+          //Careers
         </p>
         <h1
           className="mb-3 mx-3 ms-md-5"
@@ -84,9 +84,8 @@ const CareersPage = () => {
             lineHeight: "1.2",
           }}
         >
-          Grow With
-          <br />
-          Brynex
+          <span className='d-block'>Grow With</span>
+          <span className='d-block'>Brynex</span>
         </h1>
         <p
           className="mx-3 ms-md-5 d-none d-md-block"

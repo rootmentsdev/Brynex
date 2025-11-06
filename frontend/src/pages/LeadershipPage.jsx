@@ -14,13 +14,12 @@ const LeadershipPage = () => {
               fontSize: "48px",
               fontWeight: "500",
               color: "#171717",
-              marginBottom: "5px"
+              marginBottom: "5px",
+              lineHeight: "1.2"
             }}
           >
-            Visionaries 
-
-            <br />
-            Behind the Movement
+            <span className='d-block'>Visionaries</span>
+            <span className='d-block'>Behind the Movement</span>
           </h1>
           <p className="d-none d-md-block" style={{
             fontSize: "14px",

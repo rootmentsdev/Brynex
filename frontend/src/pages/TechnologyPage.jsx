@@ -26,12 +26,12 @@ const TechnologyPage = () => {
                 fontSize: "48px",
                 fontWeight: "500",
                 color: "#171717",
-                marginBottom: "5px"
+                marginBottom: "5px",
+                lineHeight: "1.2"
               }}
             >
-              Innovation Woven
-              <br />
-              Into Every Thread
+              <span className='d-block'>Innovation Woven</span>
+              <span className='d-block'>Into Every Thread</span>
             </h1>
             <p className="d-none d-md-block" style={{
               fontSize: "14px",
@@ -61,7 +61,10 @@ const TechnologyPage = () => {
             </Col>
 
             <Col md={6} className='d-flex flex-column justify-content-center mb-5 mt-4  '>
-              <h3 style={{ fontSize: "40px", color: '#171717' }}  >Scalability Through  <br /> Systemization</h3>
+              <h3 style={{ fontSize: "40px", color: '#171717', lineHeight: "1.2" }}>
+                <span className='d-block'>Scalability Through</span>
+                <span className='d-block'>Systemization</span>
+              </h3>
               <p style={{
                 fontSize: '14px', lineHeight: '20px', color: '#171717', opacity: "60%", alignContent:
                   'justify'

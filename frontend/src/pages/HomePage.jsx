@@ -26,9 +26,13 @@ const HomePage = () => {
                     fontSize: '48px',
                     fontWeight: '500',
                     marginBottom: '5px',
-                    color: '#171717'
-                }}>Shaping The Future Of  <br />
-                  Fashion & Retail  </h1>
+                    color: '#171717',
+                    lineHeight: '1.2'
+                }}>
+                    <span className='d-block'>Shaping The</span>
+                    <span className='d-block'>Future Of</span>
+                    <span className='d-block'>Fashion & Retail</span>
+                </h1>
                 <p style={{
                     fontSize: "14px",
                     lineHeight: "20px",
@@ -115,7 +119,10 @@ const HomePage = () => {
                             }} src={Home} alt="Employees Section" fluid className="w-100" />
                         </Col>
                         <Col xs={12} md={6} className='d-flex flex-column justify-content-center'>
-                            <h3 style={{ fontSize: "40px", color: '#171717' }}  >Multi-Brand Excellence <br /> Meets Innovation</h3>
+                            <h3 style={{ fontSize: "40px", color: '#171717', lineHeight: "1.2" }}>
+                              <span className='d-block'>Multi-Brand Excellence</span>
+                              <span className='d-block'>Meets Innovation</span>
+                            </h3>
                             <p style={{ fontSize: '14px', lineHeight: '20px', color: '#171717', opacity: "60%" }} className="d-none d-md-block">Brynex Apparels is a Kerala-based parent company driving India's fashion rental and retail revolution through iconic brands and intelligent in-house systems</p>
                             <p style={{ fontSize: '16px', lineHeight: '20px', color: '#171717', opacity: "60%" }} className="d-md-none">Brynex Apparels is a Kerala-based parent company driving India's fashion rental and retail revolution through iconic brands and intelligent in-house systems</p>
                         </Col>

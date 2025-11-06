@@ -285,9 +285,9 @@ const Header = () => {
           }
         `}
       </style>
-      <nav className='d-flex justify-content-between align-items-center p-3 border-bottom position-sticky top-0' style={{ zIndex: 1001, backgroundColor: '#fff' }}>
+      <nav className='d-flex justify-content-between align-items-center border-bottom position-sticky top-0' style={{ zIndex: 1001, backgroundColor: '#fff', paddingTop: '12px', paddingBottom: '12px' }}>
           <div className='d-flex align-items-center mx-3 ms-md-5'>
-              <Link to="/" className='text-decoration-none mx-3 ms-md-5 '>
+              <Link to="/" className='text-decoration-none'>
                   <img src={logo} alt="Logo" style={{ maxHeight: '50px', transition: 'transform 0.3s ease' }} />
               </Link>
           </div>
@@ -313,7 +313,7 @@ const Header = () => {
 
           {/* Hamburger Menu Button (Mobile) */}
           <button 
-              className={`d-md-none btn btn-link me-3 p-0 text-decoration-none hamburger-icon ${isMenuOpen ? 'open' : ''}`}
+              className={`d-md-none btn btn-link mx-3 me-md-5 p-0 text-decoration-none hamburger-icon ${isMenuOpen ? 'open' : ''}`}
               style={{
                 color: '#000', 
                 border: 'none', 
