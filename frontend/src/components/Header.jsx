@@ -227,9 +227,9 @@ const Header = () => {
           }
         `}
       </style>
-      <nav className='d-flex justify-content-between align-items-center p-3 border-bottom position-relative' style={{ zIndex: 1001 }}>
-          <div className='d-flex align-items-center ms-3'>
-              <Link to="/" className='text-decoration-none'>
+      <nav className='d-flex justify-content-between align-items-center p-3 border-bottom position-sticky top-0' style={{ zIndex: 1001, backgroundColor: '#fff' }}>
+          <div className='d-flex align-items-center mx-3 ms-md-5'>
+              <Link to="/" className='text-decoration-none mx-3 ms-md-5 '>
                   <img src={logo} alt="Logo" style={{ maxHeight: '50px', transition: 'transform 0.3s ease' }} />
               </Link>
           </div>
