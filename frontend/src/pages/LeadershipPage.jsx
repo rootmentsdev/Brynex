@@ -5,8 +5,8 @@ import { Row, Col } from 'react-bootstrap';
 const LeadershipPage = () => {
   return (
     <Container>
-     <div className='mx-3 ms-md-5 mt-5'>
-        <div style={{ marginTop: '80px' }}>
+     <div className='mx-3 ms-md-5 mt-4'>
+        <div >
           <p style={{ fontSize: "16px", opacity: "60%", color: "#171717" }}>//Leadership</p>
           <h1
             className="mb-4"
@@ -29,10 +29,10 @@ const LeadershipPage = () => {
           }}>Leading Brynex towards a future of innovation and excellence</p>
         </div>
       </div>
-<hr className='mt-5' />
+<hr className='mx-3 ms-md-5 mt-4' />
 
         {/* Leadership Section */}
-            <div  className='mx-3 ms-md-5 mb-5 pb-5' style={{marginTop: '100px'}}>
+            <div  className='mx-3 ms-md-5 mt-4 pb-5'>
               <Row className="d-flex flex-column flex-md-row justify-content-between align-items-start">
                 {/* First Director */}
                 <Col xs={12} md={6} className="mb-4 mb-md-0 pe-md-4">

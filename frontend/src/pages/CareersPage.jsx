@@ -64,7 +64,7 @@ const CareersPage = () => {
   return (
     <Container>
       {/* --- Hero Section --- */}
-      <div style={{ marginTop: "80px" }}>
+      <div className="mt-4">
         <p
           className="mx-3 ms-md-5"
           style={{
@@ -102,10 +102,10 @@ const CareersPage = () => {
           systems, and innovation.
         </p>
       </div>
-     <hr className='mt-5' />
+     <hr className='mx-3 ms-md-5 mt-4' />
 
       {/* --- Why Join Section --- */}
-      <div className="mx-3 ms-md-5" style={{ marginTop: "100px" }}>
+      <div className="mx-3 ms-md-5 mt-4" >
         <h3
           style={{
             fontSize: "38px",
@@ -134,7 +134,7 @@ const CareersPage = () => {
       <div className="mx-3 ms-md-5 mt-5">
         <Row className="justify-content-between align-items-start">
         {cards.map((item, index) => (
-          <Col xs={12} md={6} lg={5} key={index} className="mb-4">
+          <Col xs={12} md={6} lg={5} key={index} >
             <FaArrowUp />
             <h5
               style={{
@@ -159,9 +159,10 @@ const CareersPage = () => {
         ))}
         </Row>
       </div>
+      <hr className="mt-4" />
 
       {/* --- Current Openings --- */}
-      <div className="mx-3 ms-md-5 mt-5">
+      <div className="mx-3 ms-md-5 mt-4 ">
         <Row className="align-items-center">
         <Col md={6}>
           <h3 style={{ fontSize: "40px", color: "#171717" }}>
@@ -170,18 +171,18 @@ const CareersPage = () => {
         </Col>
         <Col
           md={6}
-          className="d-flex flex-row gap-4 flex-wrap justify-content-md-end mt-3 mt-md-0"
+          className="d-flex flex-row gap-4 flex-nowrap justify-content-md-end mt-3 mt-md-0 overflow-auto"
         >
-          <h5 style={{ fontSize: "14px", color: "#171717", cursor: "pointer" }}>
+          <h5 className="text-nowrap" style={{ fontSize: "14px", color: "#171717", cursor: "pointer" }}>
             All Vacancies
           </h5>
-          <h5 style={{ fontSize: "14px", color: "#171717", cursor: "pointer" }}>
+          <h5 className="text-nowrap" style={{ fontSize: "14px", color: "#171717", cursor: "pointer" }}>
             Sales
           </h5>
-          <h5 style={{ fontSize: "14px", color: "#171717", cursor: "pointer" }}>
+          <h5 className="text-nowrap" style={{ fontSize: "14px", color: "#171717", cursor: "pointer" }}>
             IT Department
           </h5>
-          <h5 style={{ fontSize: "14px", color: "#171717", cursor: "pointer" }}>
+          <h5 className="text-nowrap" style={{ fontSize: "14px", color: "#171717", cursor: "pointer" }}>
             HR Department
           </h5>
         </Col>
@@ -189,7 +190,7 @@ const CareersPage = () => {
       </div>
 
       {/* --- Vacancy Cards --- */}
-      <div className="mx-3 ms-md-5 mt-5">
+      <div className="mx-3 ms-md-5 mt-4">
         <Row className="justify-content-between align-items-start">
         {vacancies.map((item, index) => (
           <Col
@@ -198,7 +199,7 @@ const CareersPage = () => {
             lg={4}
             key={index}
             className="mb-4 d-flex"
-            style={{ height: "300px" }}
+            style={{ height: "350px" }}
           >
             <div
               className="p-4 w-100 h-100 d-flex flex-column justify-content-between"

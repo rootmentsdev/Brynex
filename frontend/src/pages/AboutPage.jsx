@@ -7,8 +7,8 @@ import { RxDividerVertical } from 'react-icons/rx';
 const AboutPage = () => {
   return (
     <Container>
-      <div className='mx-3 ms-md-5 mt-5'>
-        <div style={{marginTop: '80px'}}>
+      <div className='mx-3 ms-md-5 mt-4 '>
+        <div >
           <p style={{fontSize:"16px",opacity:"0.6",color:"#171717"}}>//About Brynex</p>
           <h1 className=' mb-4 ' style={{
             fontSize: "48px", fontWeight: "500",
@@ -33,14 +33,14 @@ const AboutPage = () => {
         </Col>
 
         {/* Center Divider Icon */}
-        <Col xs="auto" className="d-flex justify-content-center mb-3">
-          <RxDividerVertical size={60} color="#D9D9D9" className='mb-4' style={{ opacity: 0.3, transform: "scaleY(2)" }} />
+        <Col xs="auto" className="d-none d-md-flex justify-content-center mb-3">
+          <RxDividerVertical size={60} color="#D9D9D9" className='mb-4 ' style={{ opacity: 0.3, transform: "scaleY(2)" }} />
         </Col>
 
         {/* Right Column */}
         
           <Col md={4}  style={{ color: "#171717",marginTop:"-40px" }}>
-            <h3 style={{fontSize:"28px"}} className="mb-3">Our Vision</h3>
+            <h3 style={{fontSize:"28px"}} className="mb-3 mt-4">Our Vision</h3>
             <p className='' style={{ color: "#171717", opacity: "0.6" }}>     
               To create a world where fashion and technology move in sync —     
               beautifully and efficiently.
@@ -54,7 +54,7 @@ const AboutPage = () => {
 
     {/* Our Pillars */}
 
-    <div style={{marginTop:"-100px"}} className='mb-5 pb-5 mx-3 ms-md-5' >       
+    <div style={{marginTop:"-100px"}} className=' mx-3 ms-md-5' >       
          <h3 className='mb-5' style={{
           fontSize:"42px",
          

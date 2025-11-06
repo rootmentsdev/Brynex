@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container } from 'react-bootstrap';
 import { Row, Col, Image } from 'react-bootstrap';
-import Home from '../assets/Home.jpg';
+import Brand from '../assets/Brand2.png';
 import { FaArrowUp } from 'react-icons/fa';
 const TechnologyPage = () => {
   return (
@@ -17,8 +17,8 @@ const TechnologyPage = () => {
         }
       `}</style>
     <Container>
-      <div className='mx-3 ms-md-5 mt-5'>
-        <div style={{ marginTop: '80px' }}>
+      <div className='mx-3 ms-md-5 mt-4 '>
+        <div >
           <p style={{ fontSize: "16px", opacity: "60%", color: "#171717" }}>//Technology</p>
           <h1
             className="mb-4"
@@ -40,18 +40,19 @@ const TechnologyPage = () => {
           }}>Building India's first fully integrated fashion-tech ecosystem</p>
         </div>
       </div>
-<hr className='mt-5' />
+<hr className='mx-3 ms-md-5 mt-4' />
 
-      <div  className='my-5 py-5 mb-5 mx-3 ms-md-5'>
-         <Row className='d-flex justify-between mt-5'>
+      <div  className='mt-4  mx-3 ms-md-5'>
+         <Row className='d-flex justify-between '>
 
 
           <Col md={6}>
                                     <Image style={{
                                         width: 534,
-                                        height: 300,
+                                       
+                                        objectFit: 'cover',
         
-                                    }} src={Home} alt="Employees Section" fluid />
+                                    }} src={Brand} alt="Employees Section" fluid />
                                 </Col>
                                
                                 <Col md={6} className='d-flex flex-column justify-content-center mb-5 mt-4  '>
@@ -60,22 +61,23 @@ const TechnologyPage = () => {
                                       'justify' }}>
                                         Building the future of fashion Brynex Apparels is home to Kerala's most recognized At Brynex Apparels, we believe scalability in retail comes from systemization. Our in-house tech division develops software that automates every layer from daily operations to financial reporting and training.</p>
 
-                                        <p style={{ fontSize: '14px', lineHeight: '20px', color: '#171717', opacity: "60%",alignContent:
-                                      'justify' }}>Our vision is to build India's first fully integrated fashion-tech ecosystem powered by data, design, and discipline. Fashion rental and retail brands thrive through innovation and excellence.
+                                        <p className='mt-3' style={{ fontSize: '14px', lineHeight: '20px', color: '#171717', opacity: "60%",alignContent:
+                                      'justify',marginBottom:'-12px' }}>Our vision is to build India's first fully integrated fashion-tech ecosystem powered by data, design, and discipline. Fashion rental and retail brands thrive through innovation and excellence.
                                     </p>
                                 </Col>
                                  
                             </Row>
+                            <hr className='mt-1 mb-4' />
       </div>
 
 
 
 
 
-     <div  className='mb-5 pb-5 mx-3 ms-md-5' style={{marginTop: '0px'}}>       
+     <div  className='pb-2 mx-3 ms-md-5'  >       
            <h3 className='mb-4' style={{
             fontSize:"42px",
-            marginTop: '-50px'
+           
            }} >Our In-House Platforms</h3>
                       {/* Single Row */}
                       <Row className="d-flex flex-column flex-md-row justify-content-between align-items-start platforms-row" style={{

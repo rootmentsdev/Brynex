@@ -8,7 +8,7 @@ const BrandPage = () => {
   return (
     <Container>
       {/* Title Section */}
-      <div className="mx-3 ms-md-5" style={{ marginTop: "80px" }}>
+      <div className="mx-3 ms-md-5 mt-4" >
         <p className="text-dark" style={{ fontSize: "16px", opacity: "0.6" }}>//Brands</p>
         <h1 className="mb-3 text-dark fw-normal" style={{ fontSize: "48px" }}>
           Explore Our <br />
@@ -21,19 +21,19 @@ const BrandPage = () => {
         <p className="text-dark" style={{ fontSize: "14px", opacity: "0.6", lineHeight: "20px" }}>
           Building the future of fashion Brynex Apparels is home to Kerala's most recognized fashion rental and retail brands through innovation and excellence
         </p>
-        <hr className='mt-5' />
+        <hr className='mt-4' style={{ marginLeft: 0, marginRight: 0 }} />
       </div>
 
 
       {/* Suitor Guy Section */}
-      <div className="mx-3 ms-md-5 mt-5 mb-5 pb-5">
-        <Row className="mt-5 align-items-center">
+      <div className="mx-3 ms-md-5  mb-4">
+        <Row className="mt-4 align-items-center">
           <Col xs={12} md={6} className="mb-4 mb-md-0">
-            <h3 className="text-dark fw-normal d-md-none" style={{ fontSize: "28px" }}>Suitor Guy</h3>
-            <h3 className="text-dark fw-normal d-none d-md-block" style={{ fontSize: "40px" }}>Suitor Guy</h3>
-            <p className="text-dark fst-italic d-md-none" style={{ fontSize: "18px" }}>Be the man they remember.</p>
-            <p className="text-dark fst-italic d-none d-md-block" style={{ fontSize: "24px" }}>Be the man they remember.</p>
-            <p className="text-dark mt-1" style={{ fontSize: "14px", opacity: "0.6" }}>
+            <h3 className=" d-md-none" style={{ fontSize: "28px", color: "#171717" }}>Suitor Guy</h3>
+            <h3 className="  d-none d-md-block" style={{ fontSize: "40px" , color: "#171717"}}>Suitor Guy</h3>
+            <p className=" fst-italic d-md-none" style={{ fontSize: "18px", color: "#171717" }}>Be the man they remember.</p>
+            <p className=" fst-italic d-none d-md-block" style={{ fontSize: "24px", color: "#171717"  }}>Be the man they remember.</p>
+            <p className=" mt-1" style={{ fontSize: "14px", opacity: "0.6",color: "#171717" }}>
               Premium men's wedding rental and fashion brand offering suits, tuxedos, and accessories
             </p>
           </Col>
@@ -45,17 +45,17 @@ const BrandPage = () => {
 
 
       {/* Zorucci Section */}
-      <div className="mx-3 ms-md-5 mt-5 mb-5 pb-5">
-        <Row className="mt-5 align-items-center">
+      <div className="mx-3 ms-md-5">
+        <Row className="align-items-center">
           <Col xs={12} md={6} className="mb-4 mb-md-0 order-2 order-md-1">
             <Image src={Brand2} alt="Zorucci" fluid className="w-100" />
           </Col>
           <Col xs={12} md={6} className="order-1 order-md-2">
-            <h3 className="text-dark fw-normal d-md-none" style={{ fontSize: "28px" }}>Zorucci</h3>
-            <h3 className="text-dark fw-normal d-none d-md-block" style={{ fontSize: "40px" }}>Zorucci</h3>
-            <p className="text-dark fst-italic d-md-none" style={{ fontSize: "18px" }}>Elegance, made effortless.</p>
-            <p className="text-dark fst-italic d-none d-md-block" style={{ fontSize: "24px" }}>Elegance, made effortless.</p>
-            <p className="text-dark mt-1" style={{ fontSize: "14px", opacity: "0.6" }}>
+            <h3 className="  d-md-none" style={{ fontSize: "28px" ,color: "#171717"}}>Zorucci</h3>
+            <h3 className="  d-none d-md-block" style={{ fontSize: "40px",color: "#171717" }}>Zorucci</h3>
+            <p className="fst-italic d-md-none" style={{ fontSize: "18px",color: "#171717" }}>Elegance, made effortless.</p>
+            <p className="fst-italic d-none d-md-block" style={{ fontSize: "24px",color: "#171717" }}>Elegance, made effortless.</p>
+            <p className="mt-1" style={{ fontSize: "14px", opacity: "0.6",color: "#171717" }}>
               Kerala's refined bridal and women's wear destination, featuring bridal gowns, partywear, jewelry, and accessories.
             </p>
           </Col>
@@ -63,14 +63,14 @@ const BrandPage = () => {
       </div>
 
       {/* Dappr Squad Section */}
-      <div className="mx-3 ms-md-5 mt-5 mb-5 pb-5">
-        <Row className="mt-5 align-items-center">
+      <div className="mx-3 ms-md-5 mb-4">
+        <Row className="align-items-center">
           <Col xs={12} md={6} className="mb-4 mb-md-0">
-            <h3 className="text-dark fw-normal d-md-none" style={{ fontSize: "28px" }}>Dappr Squad</h3>
-            <h3 className="text-dark fw-normal d-none d-md-block" style={{ fontSize: "40px" }}>Dappr Squad</h3>
-            <p className="text-dark fst-italic d-md-none" style={{ fontSize: "18px" }}>For the groom's crew, done right.</p>
-            <p className="text-dark fst-italic d-none d-md-block" style={{ fontSize: "24px" }}>For the groom's crew, done right.</p>
-            <p className="text-dark mt-1" style={{ fontSize: "14px", opacity: "0.6" }}>
+            <h3 className="  d-md-none" style={{ fontSize: "28px" ,color:"#171717"}}>Dappr Squad</h3>
+            <h3 className="  d-none d-md-block" style={{ fontSize: "40px" ,color:"#171717"}}>Dappr Squad</h3>
+            <p className="fst-italic d-md-none" style={{ fontSize: "18px" ,color:"#171717"}}>For the groom's crew, done right.</p>
+            <p className="fst-italic d-none d-md-block" style={{ fontSize: "24px" ,color:"#171717"}}>For the groom's crew, done right.</p>
+            <p className="mt-1" style={{ fontSize: "14px", opacity: "0.6" ,color:"#171717"}}>
               Premium men's wedding rental and fashion brand offering suits, tuxedos, and accessories
             </p>
           </Col>

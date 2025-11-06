@@ -35,11 +35,16 @@ const ContactPage = () => {
             color: #999;
             opacity: 0.7;
           }
+          @media (min-width: 768px) {
+            .submit-btn-desktop {
+              max-width: 200px;
+            }
+          }
         `}
       </style>
-       <div style={{ marginTop: "80px" }}>
+       <div >
         <p
-          className="mx-3 ms-md-5"
+          className="mx-3 ms-md-5 mt-4"
           style={{
             fontSize: "16px",
             opacity: "0.6",
@@ -73,12 +78,12 @@ const ContactPage = () => {
           We'd love to hear from you. Get in touch with us today.
         </p>
       </div>
-   <hr className='mt-5' />
+   <hr className='mx-3 ms-md-5 mt-4' />
 
-      <div className="mx-3 ms-md-5 mb-5 pb-5" style={{marginTop:"70px"}}>
+      <div className="mx-3 ms-md-5 mb-3" style={{marginTop:"20px"}}>
         <Row>
           <Col md={6} className="mb-4 mb-md-0">
-            <h3 style={{color:"#171717", fontSize:"24px", fontWeight:"500", marginBottom:"20px"}}>Contact Information</h3>
+            <h3 style={{color:"#171717", fontSize:"28px", fontWeight:"500", marginBottom:"20px"}}>Contact Information</h3>
             <div style={{marginBottom:"16px"}}>
               <p style={{opacity:"0.6",color:"#171717",fontSize:"14px", marginBottom:"4px"}}>Official Address</p>
               <p style={{color:"#171717", fontSize:"14px", lineHeight:"22px"}}>
@@ -303,6 +308,7 @@ const ContactPage = () => {
               {/* Submit Button */}
               <Button
                 type="submit"
+                className="w-100 w-md-auto d-flex align-items-center justify-content-center  submit-btn-desktop"
                 style={{
                   backgroundColor:"#171717",
                   color:"#fff",
@@ -312,8 +318,6 @@ const ContactPage = () => {
                   fontSize:"14px",
                   fontWeight:"500",
                   cursor:"pointer",
-                  display:"inline-flex",
-                  alignItems:"center",
                   gap:"8px",
                   transition:"background-color 0.3s ease"
                 }}
