@@ -10,7 +10,7 @@ import ContactPage from './pages/ContactPage.jsx';
 import ScrollToTop from './components/ScrollToTop';
 import PageTransition from './components/PageTransition';
 import Header from './components/Header';
-
+import Footer from './components/Footer'; 
 import HomePage from './pages/HomePage';
 
 import './App.css';
@@ -62,8 +62,9 @@ function App() {
         } />
         
         
-      
+    
       </Routes>
+      <Footer />
     </div>
   );
 }

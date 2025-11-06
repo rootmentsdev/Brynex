@@ -1,7 +1,5 @@
 import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap';
-import { RxDividerVertical } from 'react-icons/rx'; 
-import { Image } from 'react-bootstrap';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 import Brand from '../assets/Brand.jpg';
 import Brand2 from '../assets/Brand2.png';  
 import Brand3 from '../assets/Brand3.png';  
@@ -10,112 +8,77 @@ const BrandPage = () => {
   return (
     <Container>
       {/* Title Section */}
-      <div className='mx-3 ms-md-5 mt-5'>
-        <div style={{ marginTop: '80px' }}>
-          <p style={{ fontSize: "16px" }}>//Brands</p>
-          <h1
-            className="mb-4"
-            style={{
-              fontSize: "48px",
-              fontWeight: "500",
-              color: "#171717",
-              marginBottom: "5px"
-            }}
-          >
-            Explore Our <br />
-            Premium Brands
-          </h1>
-        </div>
+      <div className="mx-3 ms-md-5" style={{ marginTop: "80px" }}>
+        <p className="text-dark" style={{ fontSize: "16px", opacity: "0.6" }}>//Brands</p>
+        <h1 className="mb-3 text-dark fw-normal" style={{ fontSize: "48px" }}>
+          Explore Our <br />
+          Premium Brands
+        </h1>
       </div>
 
-      {/* Divider Section */}
+      {/* Description Section */}
+      <div className="mx-3 ms-md-5">
+        <p className="text-dark" style={{ fontSize: "14px", opacity: "0.6", lineHeight: "20px" }}>
+          Building the future of fashion Brynex Apparels is home to Kerala's most recognized fashion rental and retail brands through innovation and excellence
+        </p>
+        <hr className='mt-5' />
+      </div>
+
+
+      {/* Suitor Guy Section */}
       <div className="mx-3 ms-md-5 mt-5 mb-5 pb-5">
-        <div >
-          <div style={{marginTop:'60px'}} className="d-flex align-items-center">
-
-            <div className='me-md-5'>
-              <h3 className='me-md-5 d-md-none' style={{fontSize:"16px", color: '#171717', opacity: "60%" }}>Building the future of fashion Brynex Apparels is home to Kerala's most recognized fashion rental and retail brandsretail through innovation and excellence</h3>
-              <h3 className='me-md-5 d-none d-md-block' style={{fontSize:"20px" ,color: '#171717', opacity: "60%" }}>Building the future of fashion Brynex Apparels is home to Kerala's <br />                                                                       
-                 most recognized fashion rental and retail brandsretail through <br />                                                                          
-                 innovation and excellence</h3>
-            </div>
-          </div>
-        </div>
-
-
-
+        <Row className="mt-5 align-items-center">
+          <Col xs={12} md={6} className="mb-4 mb-md-0">
+            <h3 className="text-dark fw-normal d-md-none" style={{ fontSize: "28px" }}>Suitor Guy</h3>
+            <h3 className="text-dark fw-normal d-none d-md-block" style={{ fontSize: "40px" }}>Suitor Guy</h3>
+            <p className="text-dark fst-italic d-md-none" style={{ fontSize: "18px" }}>Be the man they remember.</p>
+            <p className="text-dark fst-italic d-none d-md-block" style={{ fontSize: "24px" }}>Be the man they remember.</p>
+            <p className="text-dark mt-1" style={{ fontSize: "14px", opacity: "0.6" }}>
+              Premium men's wedding rental and fashion brand offering suits, tuxedos, and accessories
+            </p>
+          </Col>
+          <Col xs={12} md={6}>
+            <Image src={Brand} alt="Suitor Guy" fluid className="w-100" />
+          </Col>
+        </Row>
       </div>
-    {/* suitor guy */}
-       <div className="mx-3 ms-md-5 mt-5 mb-5 pb-5" style={{minHeight:"418px"}}>  
-          <div className='mt-5 d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center'>
-          <div className='mb-4 mb-md-0'>
-            <h3 style={{fontSize:"28px"}} className='mt-1 d-md-none'>Suitor Guy</h3>
-            <h3 style={{fontSize:"40px"}} className='mt-1 d-none d-md-block'>Suitor Guy</h3>      
-            <p style={{fontSize:"18px", fontStyle:"italic"}} className='mt-1 d-md-none'>Be the man they remember.</p>
-            <p style={{fontSize:"24px" , fontStyle:"italic"}} className='mt-1 d-none d-md-block'>Be the man they remember.</p>                                                    
-            <p className='mt-1' style={{color: '#171717', opacity: "60%"}}>Premium men's wedding rental and fashion <br className='d-none d-md-block' /> brand offering suits, tuxedos, and accessories</p>                                                                   
-          </div>
-          <Image className='me-md-5 w-100' style={{
-                maxWidth: '741px',
-                width: '100%',
-                height: 'auto',
-                objectFit: 'contain'
 
 
-              }} src={Brand} alt="Suitor Guy" fluid />
-          </div>
+      {/* Zorucci Section */}
+      <div className="mx-3 ms-md-5 mt-5 mb-5 pb-5">
+        <Row className="mt-5 align-items-center">
+          <Col xs={12} md={6} className="mb-4 mb-md-0 order-2 order-md-1">
+            <Image src={Brand2} alt="Zorucci" fluid className="w-100" />
+          </Col>
+          <Col xs={12} md={6} className="order-1 order-md-2">
+            <h3 className="text-dark fw-normal d-md-none" style={{ fontSize: "28px" }}>Zorucci</h3>
+            <h3 className="text-dark fw-normal d-none d-md-block" style={{ fontSize: "40px" }}>Zorucci</h3>
+            <p className="text-dark fst-italic d-md-none" style={{ fontSize: "18px" }}>Elegance, made effortless.</p>
+            <p className="text-dark fst-italic d-none d-md-block" style={{ fontSize: "24px" }}>Elegance, made effortless.</p>
+            <p className="text-dark mt-1" style={{ fontSize: "14px", opacity: "0.6" }}>
+              Kerala's refined bridal and women's wear destination, featuring bridal gowns, partywear, jewelry, and accessories.
+            </p>
+          </Col>
+        </Row>
+      </div>
 
-        </div>
-
-
-        {/* zorruci */}
-
-         <div className="mx-3 ms-md-5 mt-5 mb-5 pb-5">
-          <div className='mt-5 d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center'>
-
-          <Image className='mb-4 mb-md-0 w-100' style={{
-                maxWidth: '741px',
-                width: '100%',
-                height: 'auto',
-                objectFit: 'contain'
-
-
-              }} src={Brand2} alt="zorruci " fluid />
-          <div className='me-md-5'>
-            <h3 style={{fontSize:"28px"}} className='mt-1 d-md-none'>Zorucci</h3>
-            <h3 style={{fontSize:"40px"}} className='mt-1 d-none d-md-block'>Zorucci</h3>        
-            <p style={{fontSize:"18px", fontStyle:"italic"}} className='mt-1 d-md-none'>Elegance, made effortless.</p>
-            <p style={{fontSize:"24px" , fontStyle:"italic"}} className='mt-1 d-none d-md-block'>Elegance, made effortless.</p>                                                  
-            <p className='mt-1' style={{color: '#171717', opacity: "60%"}}>Kerala's refined bridal and women's wear <br className='d-none d-md-block' /> destination, featuring bridal gowns, partywear,  <br className='d-none d-md-block' /> jewelry, and accessories.</p>                                
-          </div>
-
-          </div>
-
-        </div>
-
-
-        {/* Dappr Squad  */}
-
-          <div className="mx-3 ms-md-5 mt-5 mb-5 pb-5" style={{minHeight:"418px"}}>  
-          <div className='mt-5 d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center'>
-          <div className='mb-4 mb-md-0'>
-            <h3 style={{fontSize:"28px"}} className='mt-1 d-md-none'>Dappr Squad</h3>
-            <h3 style={{fontSize:"40px"}} className='mt-1 d-none d-md-block'>Dappr Squad</h3>      
-            <p style={{fontSize:"18px", fontStyle:"italic"}} className='mt-1 d-md-none'>For the groom's crew, done right.</p>
-            <p style={{fontSize:"24px" , fontStyle:"italic"}} className='mt-1 d-none d-md-block'>For the groom's crew, done right.</p>                                                    
-            <p className='mt-1' style={{color: '#171717', opacity: "60%"}}>Premium men's wedding rental and fashion <br className='d-none d-md-block' /> brand offering suits, tuxedos, and accessories</p>                                                                   
-          </div>
-          <Image className='me-md-5 w-100' style={{
-                maxWidth: '741px',
-                width: '100%',
-                height: 'auto',
-                objectFit: 'contain'
-
-
-              }} src={Brand3} alt="Suitor Guy" fluid />
-          </div>
-
-        </div>
+      {/* Dappr Squad Section */}
+      <div className="mx-3 ms-md-5 mt-5 mb-5 pb-5">
+        <Row className="mt-5 align-items-center">
+          <Col xs={12} md={6} className="mb-4 mb-md-0">
+            <h3 className="text-dark fw-normal d-md-none" style={{ fontSize: "28px" }}>Dappr Squad</h3>
+            <h3 className="text-dark fw-normal d-none d-md-block" style={{ fontSize: "40px" }}>Dappr Squad</h3>
+            <p className="text-dark fst-italic d-md-none" style={{ fontSize: "18px" }}>For the groom's crew, done right.</p>
+            <p className="text-dark fst-italic d-none d-md-block" style={{ fontSize: "24px" }}>For the groom's crew, done right.</p>
+            <p className="text-dark mt-1" style={{ fontSize: "14px", opacity: "0.6" }}>
+              Premium men's wedding rental and fashion brand offering suits, tuxedos, and accessories
+            </p>
+          </Col>
+          <Col xs={12} md={6}>
+            <Image src={Brand3} alt="Dappr Squad" fluid className="w-100" />
+          </Col>
+        </Row>
+      </div>
     </Container>
   );
 };

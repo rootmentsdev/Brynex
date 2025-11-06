@@ -40,7 +40,7 @@ const TechnologyPage = () => {
           }}>Building India's first fully integrated fashion-tech ecosystem</p>
         </div>
       </div>
-
+<hr className='mt-5' />
 
       <div  className='my-5 py-5 mb-5 mx-3 ms-md-5'>
          <Row className='d-flex justify-between mt-5'>

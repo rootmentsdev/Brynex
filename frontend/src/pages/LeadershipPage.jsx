@@ -29,7 +29,7 @@ const LeadershipPage = () => {
           }}>Leading Brynex towards a future of innovation and excellence</p>
         </div>
       </div>
-
+<hr className='mt-5' />
 
         {/* Leadership Section */}
             <div  className='mx-3 ms-md-5 mb-5 pb-5' style={{marginTop: '100px'}}>
@@ -71,6 +71,7 @@ const LeadershipPage = () => {
                     </p>
                   </div>
                 </Col>
+               
       
                 {/* Second Director */}
                 <Col xs={12} md={6} className="ps-md-4">
