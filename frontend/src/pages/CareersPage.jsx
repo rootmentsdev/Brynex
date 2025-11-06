@@ -89,9 +89,22 @@ const CareersPage = () => {
           Brynex
         </h1>
         <p
-          className="mx-3 ms-md-5"
+          className="mx-3 ms-md-5 d-none d-md-block"
           style={{
             fontSize: "14px",
+            lineHeight: "20px",
+            color: "#171717",
+            opacity: "0.6",
+            maxWidth: "500px",
+          }}
+        >
+          Brynex is more than a company — it's a movement that connects fashion,
+          systems, and innovation.
+        </p>
+        <p
+          className="mx-3 ms-md-5 d-md-none"
+          style={{
+            fontSize: "16px",
             lineHeight: "20px",
             color: "#171717",
             opacity: "0.6",
@@ -117,8 +130,22 @@ const CareersPage = () => {
           Why Join Brynex?
         </h3>
         <p
+          className="d-none d-md-block"
           style={{
             fontSize: "14px",
+            lineHeight: "20px",
+            color: "#171717",
+            opacity: "0.6",
+            maxWidth: "600px",
+          }}
+        >
+          Brynex isn't just a workplace — it's a creative hub where ideas meet
+          purpose. Join us to shape the future of fashion and technology.
+        </p>
+        <p
+          className="d-md-none"
+          style={{
+            fontSize: "16px",
             lineHeight: "20px",
             color: "#171717",
             opacity: "0.6",

@@ -18,7 +18,10 @@ const BrandPage = () => {
 
       {/* Description Section */}
       <div className="mx-3 ms-md-5">
-        <p className="text-dark" style={{ fontSize: "14px", opacity: "0.6", lineHeight: "20px" }}>
+        <p className="text-dark d-none d-md-block" style={{ fontSize: "14px", opacity: "0.6", lineHeight: "20px" }}>
+          Building the future of fashion Brynex Apparels is home to Kerala's most recognized fashion rental and retail brands through innovation and excellence
+        </p>
+        <p className="text-dark d-md-none" style={{ fontSize: "16px", opacity: "0.6", lineHeight: "20px" }}>
           Building the future of fashion Brynex Apparels is home to Kerala's most recognized fashion rental and retail brands through innovation and excellence
         </p>
         <hr className='mt-4' style={{ marginLeft: 0, marginRight: 0 }} />

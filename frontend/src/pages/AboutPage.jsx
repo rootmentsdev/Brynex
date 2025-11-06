@@ -22,7 +22,15 @@ const AboutPage = () => {
         
         {/* Left Column */}
         <Col md={7} className="mb-4" style={{ color: "#171717", opacity: "0.6" }}>
-          <p className='' style={{ fontSize: "14px" }}>
+          <p className='d-none d-md-block' style={{ fontSize: "14px" }}>
+            Brynex Apparels was founded with a mission to organize and modernize
+            the Indian fashion rental and retail industry.
+            <br />
+            Starting as a single store, we have grown into a parent organization
+            managing men's fashion, bridal wear, jewelry, and tech solutions —
+            all designed to create a seamless ecosystem for scale and performance.
+          </p>
+          <p className='d-md-none' style={{ fontSize: "16px" }}>
             Brynex Apparels was founded with a mission to organize and modernize
             the Indian fashion rental and retail industry.
             <br />
@@ -41,7 +49,11 @@ const AboutPage = () => {
         
           <Col md={4}  style={{ color: "#171717",marginTop:"-40px" }}>
             <h3 style={{fontSize:"28px"}} className="mb-3 mt-4">Our Vision</h3>
-            <p className='' style={{ color: "#171717", opacity: "0.6" }}>     
+            <p className='d-none d-md-block' style={{ fontSize: "14px", color: "#171717", opacity: "0.6" }}>     
+              To create a world where fashion and technology move in sync —     
+              beautifully and efficiently.
+            </p>
+            <p className='d-md-none' style={{ fontSize: "16px", color: "#171717", opacity: "0.6" }}>     
               To create a world where fashion and technology move in sync —     
               beautifully and efficiently.
             </p>
@@ -54,7 +66,7 @@ const AboutPage = () => {
 
     {/* Our Pillars */}
 
-    <div style={{marginTop:"-100px"}} className=' mx-3 ms-md-5' >       
+    <div style={{marginTop:"-100px"}} className=' mx-3 ms-md-5 mb-4' >       
          <h3 className='mb-5' style={{
           fontSize:"42px",
          

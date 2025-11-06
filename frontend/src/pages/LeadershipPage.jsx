@@ -22,8 +22,13 @@ const LeadershipPage = () => {
             <br />
             Behind the Movement
           </h1>
-          <p style={{
+          <p className="d-none d-md-block" style={{
             fontSize: "14px",
+            lineHeight: "20px",
+            color: '#171717', opacity: "60%"
+          }}>Leading Brynex towards a future of innovation and excellence</p>
+          <p className="d-md-none" style={{
+            fontSize: "16px",
             lineHeight: "20px",
             color: '#171717', opacity: "60%"
           }}>Leading Brynex towards a future of innovation and excellence</p>

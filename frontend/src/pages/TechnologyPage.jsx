@@ -33,8 +33,13 @@ const TechnologyPage = () => {
             <br />
             Into Every Thread
           </h1>
-          <p style={{
+          <p className="d-none d-md-block" style={{
             fontSize: "14px",
+            lineHeight: "20px",
+            color: '#171717', opacity: "60%"
+          }}>Building India's first fully integrated fashion-tech ecosystem</p>
+          <p className="d-md-none" style={{
+            fontSize: "16px",
             lineHeight: "20px",
             color: '#171717', opacity: "60%"
           }}>Building India's first fully integrated fashion-tech ecosystem</p>

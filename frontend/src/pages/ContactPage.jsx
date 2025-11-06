@@ -10,18 +10,65 @@ const ContactPage = () => {
     subject: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null); // 'success' or 'error'
+
+  // Google Apps Script Web App URL
+  const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwJIwWovoxZkawPGDg_Yse2fBZpfFOrmjOsBX0vOZ5XHmuLikiYjO0t5Cd-V7_NdHzS/exec';
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     });
+    // Clear status when user starts typing again
+    if (submitStatus) setSubmitStatus(null);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    try {
+      // Convert form data to URL-encoded format for Google Apps Script
+      const params = new URLSearchParams();
+      params.append('fullName', formData.fullName);
+      params.append('email', formData.email);
+      params.append('subject', formData.subject);
+      params.append('message', formData.message);
+      params.append('timestamp', new Date().toISOString());
+
+      // Submit to Google Apps Script
+      const response = await fetch(GOOGLE_SCRIPT_URL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: params.toString(),
+        mode: 'no-cors' // Required for Google Apps Script public web apps
+      });
+
+      // With no-cors mode, we can't read the response
+      // Assume success and clear the form (data will be saved to sheet)
+      setSubmitStatus('success');
+      setFormData({
+        fullName: '',
+        email: '',
+        subject: '',
+        message: ''
+      });
+
+      // Clear success message after 5 seconds
+      setTimeout(() => setSubmitStatus(null), 5000);
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setSubmitStatus('error');
+      // Clear error message after 5 seconds
+      setTimeout(() => setSubmitStatus(null), 5000);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -66,9 +113,21 @@ const ContactPage = () => {
          
         </h1>
         <p
-          className="mx-3 ms-md-5"
+          className="mx-3 ms-md-5 d-none d-md-block"
           style={{
             fontSize: "14px",
+            lineHeight: "20px",
+            color: "#171717",
+            opacity: "0.6",
+            maxWidth: "500px",
+          }}
+        >
+          We'd love to hear from you. Get in touch with us today.
+        </p>
+        <p
+          className="mx-3 ms-md-5 d-md-none"
+          style={{
+            fontSize: "16px",
             lineHeight: "20px",
             color: "#171717",
             opacity: "0.6",
@@ -306,26 +365,57 @@ const ContactPage = () => {
               </div>
 
               {/* Submit Button */}
-              <Button
-                type="submit"
-                className="w-100 w-md-auto d-flex align-items-center justify-content-center  submit-btn-desktop"
-                style={{
-                  backgroundColor:"#171717",
-                  color:"#fff",
-                  border:"none",
-                  padding:"12px 24px",
-                  borderRadius:"4px",
-                  fontSize:"14px",
-                  fontWeight:"500",
-                  cursor:"pointer",
-                  gap:"8px",
-                  transition:"background-color 0.3s ease"
-                }}
-                onMouseEnter={(e) => e.target.style.backgroundColor = "#333"}
-                onMouseLeave={(e) => e.target.style.backgroundColor = "#171717"}
-              >
-                Submit <FaArrowRight />
-              </Button>
+              <div>
+                <Button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="w-100 w-md-auto d-flex align-items-center justify-content-center submit-btn-desktop"
+                  style={{
+                    backgroundColor: isSubmitting ? "#999" : "#171717",
+                    color:"#fff",
+                    border:"none",
+                    padding:"12px 24px",
+                    borderRadius:"4px",
+                    fontSize:"14px",
+                    fontWeight:"500",
+                    cursor: isSubmitting ? "not-allowed" : "pointer",
+                    gap:"8px",
+                    transition:"background-color 0.3s ease",
+                    marginLeft: 0,
+                    opacity: isSubmitting ? 0.7 : 1
+                  }}
+                  onMouseEnter={(e) => {
+                    if (!isSubmitting) e.target.style.backgroundColor = "#333";
+                  }}
+                  onMouseLeave={(e) => {
+                    if (!isSubmitting) e.target.style.backgroundColor = "#171717";
+                  }}
+                >
+                  {isSubmitting ? 'Submitting...' : 'Submit'} {!isSubmitting && <FaArrowRight />}
+                </Button>
+                
+                {/* Success/Error Messages */}
+                {submitStatus === 'success' && (
+                  <p style={{
+                    color: "#28a745",
+                    fontSize: "14px",
+                    marginTop: "12px",
+                    marginBottom: 0
+                  }}>
+                    ✓ Message sent successfully! We'll get back to you soon.
+                  </p>
+                )}
+                {submitStatus === 'error' && (
+                  <p style={{
+                    color: "#dc3545",
+                    fontSize: "14px",
+                    marginTop: "12px",
+                    marginBottom: 0
+                  }}>
+                    ✗ Something went wrong. Please try again or contact us directly.
+                  </p>
+                )}
+              </div>
             </form>
           </Col>
         </Row>

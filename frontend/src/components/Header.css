@@ -26,31 +26,33 @@
   text-underline-offset: 10px !important;
 }
 
-/* Mobile Menu Links */
-.Header-mobile-ul li a {
-  transition: opacity 0.3s ease, text-decoration 0.3s ease, color 0.3s ease;
-  color: rgba(0, 0, 0, 0.6) !important;
-  opacity: 1 !important;
-  display: inline-block;
-  padding-bottom: 4px;
-}
+/* Mobile Menu Links - Only apply on mobile screens */
+@media (max-width: 767.98px) {
+  .Header-mobile-ul li a {
+    transition: opacity 0.3s ease, text-decoration 0.3s ease, color 0.3s ease;
+    color: #fff !important;
+    opacity: 1 !important;
+    display: inline-block;
+    padding-bottom: 4px;
+  }
 
-/* Mobile Menu Links Hover Effect */
-.Header-mobile-ul li a:hover {
-  color: #000000 !important;
-  text-decoration: underline !important;
-  text-decoration-color: #000000 !important;
-  text-decoration-thickness: 2px !important;
-  text-underline-offset: 4px !important;
-}
+  /* Mobile Menu Links Hover Effect */
+  .Header-mobile-ul li a:hover {
+    color: #fff !important;
+    text-decoration: underline !important;
+    text-decoration-color: #fff !important;
+    text-decoration-thickness: 2px !important;
+    text-underline-offset: 4px !important;
+  }
 
-/* Mobile Menu Active Link (Current Page) */
-.Header-mobile-ul li a.active-link {
-  color: #000000 !important;
-  font-weight: 700 !important;
-  text-decoration: underline !important;
-  text-decoration-color: #000000 !important;
-  text-decoration-thickness: 2px !important;
-  text-underline-offset: 10px !important;
+  /* Mobile Menu Active Link (Current Page) */
+  .Header-mobile-ul li a.active-link {
+    color: #fff !important;
+    font-weight: 700 !important;
+    text-decoration: underline !important;
+    text-decoration-color: #fff !important;
+    text-decoration-thickness: 2px !important;
+    text-underline-offset: 10px !important;
+  }
 }
 
