@@ -33,16 +33,22 @@ const HomePage = () => {
                     <span className='d-block'>Future Of</span>
                     <span className='d-block'>Fashion & Retail</span>
                 </h1>
-                <p style={{
-                    fontSize: "14px",
-                    lineHeight: "20px",
-                    color: '#171717', opacity: "60%"
-                }} className='mt-4 d-none d-md-block' >Brynex Apparels is a Kerala-based parent company driving India's fashion <br /> rental and retail revolution through iconic brands and intelligent in-house <br /> systems.</p>
-                <p style={{
+                <p  style={{
                     fontSize: "16px",
-                    lineHeight: "20px",
-                    color: '#171717', opacity: "60%"
-                }} className='mt-4 d-md-none' >Brynex Apparels is a Kerala-based parent company driving India's fashion <br /> rental and retail revolution through iconic brands and intelligent in-house <br /> systems.</p>
+                    color: "#171717",
+                    opacity: "0.6",
+                    textAlign: "justify",
+                    lineHeight: "1.6",
+                    marginTop: "6px",
+                  }}className='mt-4 d-none d-md-block' >Brynex Apparels is a Kerala-based parent company driving India's fashion <br /> rental and retail revolution through iconic brands and intelligent in-house <br /> systems.</p>
+                <p  style={{
+                    fontSize: "16px",
+                    color: "#171717",
+                    opacity: "0.6",
+                    textAlign: "justify",
+                    lineHeight: "1.6",
+                    marginTop: "6px",
+                  }} className='mt-4 d-md-none' >Brynex Apparels is a Kerala-based parent company driving India's fashion <br /> rental and retail revolution through iconic brands and intelligent in-house <br /> systems.</p>
             </div>
           
 
@@ -53,7 +59,7 @@ const HomePage = () => {
                             <h4 className="text-dark fw-bold mb-2" style={{ fontSize:"1.6rem" }}>
                                 200+
                             </h4>
-                            <p className="text-dark fw-normal mb-0" style={{ fontSize: '14px', opacity: "0.6" }}>
+                            <p className="text-dark fw-normal mb-0" style={{ fontSize: '16px', opacity: "0.6" }}>
                                 Employees
                             </p>
                         </Col>
@@ -61,7 +67,7 @@ const HomePage = () => {
                             <h4 className="text-dark fw-bold mb-2" style={{ fontSize:"1.6rem" }}>
                                 3
                             </h4>
-                            <p className="text-dark fw-normal mb-0" style={{ fontSize: '14px', opacity: "0.6" }}>
+                            <p className="text-dark fw-normal mb-0" style={{ fontSize: '16px', opacity: "0.6" }}>
                                 Fashion & Rental <br />
                                 Brands
                             </p>
@@ -70,7 +76,7 @@ const HomePage = () => {
                             <h4 className="text-dark fw-bold mb-2" style={{ fontSize:"1.6rem" }}>
                                 5
                             </h4>
-                            <p className="text-dark fw-normal mb-0" style={{ fontSize: '14px', opacity: "0.6" }}>
+                            <p className="text-dark fw-normal mb-0" style={{ fontSize: '16px', opacity: "0.6" }}>
                                 Proprietary Software <br />
                                 Platforms
                             </p>
@@ -79,7 +85,7 @@ const HomePage = () => {
                             <h4 className="text-dark fw-bold mb-2" style={{ fontSize:"1.6rem" }}>
                                 20+
                             </h4>
-                            <p className="text-dark fw-normal mb-0" style={{ fontSize: '14px', opacity: "0.6" }}>
+                            <p className="text-dark fw-normal mb-0" style={{ fontSize: '16px', opacity: "0.6" }}>
                                 Stores Across Kerala
                             </p>
                         </Col>
@@ -88,7 +94,7 @@ const HomePage = () => {
                     width: 263,
                   
                     borderRadius: 0,
-                    backgroundColor: '#000',
+                    backgroundColor: '#171717',
                     border: 'none',
                     transition: 'all 0.3s ease',
                     cursor: 'pointer'
@@ -99,7 +105,7 @@ const HomePage = () => {
                     e.currentTarget.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
                 }}
                 onMouseLeave={(e) => {
-                    e.currentTarget.style.backgroundColor = '#000';
+                    e.currentTarget.style.backgroundColor = '#171717';
                     e.currentTarget.style.transform = 'translateY(0)';
                     e.currentTarget.style.boxShadow = 'none';
                 }}
@@ -123,8 +129,22 @@ const HomePage = () => {
                               <span className='d-block'>Multi-Brand Excellence</span>
                               <span className='d-block'>Meets Innovation</span>
                             </h3>
-                            <p style={{ fontSize: '14px', lineHeight: '20px', color: '#171717', opacity: "60%" }} className="d-none d-md-block">Brynex Apparels is a Kerala-based parent company driving India's fashion rental and retail revolution through iconic brands and intelligent in-house systems</p>
-                            <p style={{ fontSize: '16px', lineHeight: '20px', color: '#171717', opacity: "60%" }} className="d-md-none">Brynex Apparels is a Kerala-based parent company driving India's fashion rental and retail revolution through iconic brands and intelligent in-house systems</p>
+                            <p  style={{
+                    fontSize: "16px",
+                    color: "#171717",
+                    opacity: "0.6",
+                    textAlign: "justify",
+                    lineHeight: "1.6",
+                    marginTop: "6px",
+                  }} className="d-none d-md-block">Brynex Apparels is a Kerala-based parent company driving India's fashion rental and retail revolution through iconic brands and intelligent in-house systems</p>
+                            <p  style={{
+                    fontSize: "16px",
+                    color: "#171717",
+                    opacity: "0.6",
+                    textAlign: "justify",
+                    lineHeight: "1.6",
+                    marginTop: "6px",
+                  }} className="d-md-none">Brynex Apparels is a Kerala-based parent company driving India's fashion rental and retail revolution through iconic brands and intelligent in-house systems</p>
                         </Col>
                     </Row>
             </div>

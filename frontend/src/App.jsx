@@ -4,7 +4,6 @@ import { Routes, Route } from 'react-router-dom';
 import AboutPage from './pages/AboutPage';
 import BrandPage from './pages/BrandPage';
 import TechnologyPage from './pages/TechnologyPage';
-import LeadershipPage from './pages/LeadershipPage';
 import CareersPage from './pages/CareersPage';
 import ContactPage from './pages/ContactPage.jsx';  
 import ScrollToTop from './components/ScrollToTop';
@@ -44,12 +43,6 @@ function App() {
             <TechnologyPage />
           </PageTransition>
         } />
-        <Route path="/leadership" element={
-          <PageTransition>
-            <LeadershipPage />
-          </PageTransition>
-        } />
-      
         <Route path="/careers" element={
           <PageTransition>
             <CareersPage />

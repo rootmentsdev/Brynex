@@ -82,6 +82,14 @@ const ContactPage = () => {
             color: #999;
             opacity: 0.7;
           }
+          @media (max-width: 767px) {
+            .contact-submit-btn-mobile {
+              width: 100% !important;
+              padding-top: 16px !important;
+              padding-bottom: 16px !important;
+              border-radius: 0 !important;
+            }
+          }
           @media (min-width: 768px) {
             .submit-btn-desktop {
               max-width: 200px;
@@ -115,64 +123,71 @@ const ContactPage = () => {
         <p
           className="mx-3 ms-md-5 d-none d-md-block"
           style={{
-            fontSize: "14px",
-            lineHeight: "20px",
+            fontSize: "16px",
             color: "#171717",
             opacity: "0.6",
-            maxWidth: "500px",
-          }}
-        >
+            textAlign: "justify",
+            lineHeight: "1.6",
+            marginTop: "6px",
+          }}>
           We'd love to hear from you. Get in touch with us today.
         </p>
         <p
           className="mx-3 ms-md-5 d-md-none"
           style={{
             fontSize: "16px",
-            lineHeight: "20px",
             color: "#171717",
             opacity: "0.6",
-            maxWidth: "500px",
-          }}
-        >
+            textAlign: "justify",
+            lineHeight: "1.6",
+            marginTop: "6px",
+          }}>
           We'd love to hear from you. Get in touch with us today.
         </p>
       </div>
    <hr className='mx-3 ms-md-5 mt-4' />
 
-      <div className="mx-3 ms-md-5 mb-3" style={{marginTop:"20px"}}>
+      <div className="mx-3 ms-md-5 mb-3 pb-4" >
         <Row>
           <Col md={6} className="mb-4 mb-md-0">
-            <h3 style={{color:"#171717", fontSize:"28px", fontWeight:"500", marginBottom:"20px"}}>Contact Information</h3>
-            <div style={{marginBottom:"16px"}}>
-              <p style={{opacity:"0.6",color:"#171717",fontSize:"14px", marginBottom:"4px"}}>Official Address</p>
-              <p style={{color:"#171717", fontSize:"14px", lineHeight:"22px"}}>
+            <h3 style={{color:"#171717", fontSize:"28px", fontWeight:"500", marginBottom:"16px"}}>Contact Information</h3>
+            <div style={{marginBottom:"12px"}}>
+              <p style={{opacity:"0.6",color:"#171717",fontSize:"16px", marginBottom:"4px"}}>Official Address</p>
+              <p  style={{
+                    fontSize: "16px",
+                    color: "#171717",
+                   
+                    textAlign: "justify",
+                    lineHeight: "1.6",
+                    marginTop: "6px",
+                  }}>
                 BRYNEX APPARELS PRIVATE LIMITED <br />
                 37/3688 A3, HARIKEERTHI COMPLEX, <br />
                 Edapally, Ernakulam, Ernakulam- 682024, Kerala
               </p>
             </div>
-            <div style={{marginBottom:"16px"}}>
-              <p style={{opacity:"0.6",color:"#171717",fontSize:"14px", marginBottom:"4px"}}>Phone</p>
-              <p style={{color:"#171717", fontSize:"14px"}}>+91 98765 43210</p>
+            <div style={{marginBottom:"12px"}}>
+              <p style={{opacity:"0.6",color:"#171717",fontSize:"16px", marginBottom:"4px"}}>Phone</p>
+              <p style={{color:"#171717", fontSize:"18px"}}>+91 98765 43210</p>
             </div>
             <div>
-              <p style={{opacity:"0.6",color:"#171717",fontSize:"14px", marginBottom:"4px"}}>Email</p>
-              <p style={{color:"#171717", fontSize:"14px"}}>brynex@gmail.com</p>
+              <p style={{opacity:"0.6",color:"#171717",fontSize:"16px", marginBottom:"4px"}}>Email</p>
+              <p style={{color:"#171717", fontSize:"18px"}}>brynex@gmail.com</p>
             </div>
           </Col>
           <Col md={6}>
-            <h3 style={{color:"#171717", fontSize:"24px", fontWeight:"500", marginBottom:"30px"}}>Send Us a Message</h3>
+            <h3 style={{color:"#171717", fontSize:"24px", fontWeight:"500", marginBottom:"20px"}}>Send Us a Message</h3>
             <form onSubmit={handleSubmit}>
               {/* Full Name Field */}
-              <div style={{marginBottom:"24px"}}>
+              <div >
                 <label 
                   htmlFor="fullName"
                   style={{
                     display:"block",
                     color:"#171717",
-                    fontSize:"14px",
+                    fontSize:"16px",
                     fontWeight:"500",
-                    marginBottom:"8px"
+                   
                   }}
                 >
                   Full Name <span style={{color:"#ff0000"}}>*</span>
@@ -185,7 +200,7 @@ const ContactPage = () => {
                       top:"50%",
                       transform:"translateY(-50%)",
                       color:"#666",
-                      fontSize:"14px"
+                      fontSize:"16px"
                     }} 
                   />
                   <input
@@ -201,7 +216,7 @@ const ContactPage = () => {
                       padding:"12px 12px 12px 36px",
                       border:"1px solid #E5E5E5",
                       borderRadius:"4px",
-                      fontSize:"14px",
+                      fontSize:"16px",
                       color:"#171717",
                       backgroundColor:"#fff",
                       outline:"none",
@@ -214,15 +229,15 @@ const ContactPage = () => {
               </div>
 
               {/* Email Field */}
-              <div style={{marginBottom:"24px"}}>
+              <div >
                 <label 
                   htmlFor="email"
                   style={{
                     display:"block",
                     color:"#171717",
-                    fontSize:"14px",
+                    fontSize:"16px",
                     fontWeight:"500",
-                    marginBottom:"8px"
+                   
                   }}
                 >
                   Email <span style={{color:"#ff0000"}}>*</span>
@@ -235,7 +250,7 @@ const ContactPage = () => {
                       top:"50%",
                       transform:"translateY(-50%)",
                       color:"#666",
-                      fontSize:"14px"
+                      fontSize:"16px"
                     }} 
                   />
                   <input
@@ -251,7 +266,7 @@ const ContactPage = () => {
                       padding:"12px 12px 12px 36px",
                       border:"1px solid #E5E5E5",
                       borderRadius:"4px",
-                      fontSize:"14px",
+                      fontSize:"16px",
                       color:"#171717",
                       backgroundColor:"#fff",
                       outline:"none",
@@ -264,15 +279,15 @@ const ContactPage = () => {
               </div>
 
               {/* Subject Field */}
-              <div style={{marginBottom:"24px"}}>
+              <div >
                 <label 
                   htmlFor="subject"
                   style={{
                     display:"block",
                     color:"#171717",
-                    fontSize:"14px",
+                    fontSize:"16px",
                     fontWeight:"500",
-                    marginBottom:"8px"
+                   
                   }}
                 >
                   Subject <span style={{color:"#ff0000"}}>*</span>
@@ -285,7 +300,7 @@ const ContactPage = () => {
                       top:"50%",
                       transform:"translateY(-50%)",
                       color:"#666",
-                      fontSize:"14px"
+                      fontSize:"16px"
                     }} 
                   />
                   <input
@@ -301,7 +316,7 @@ const ContactPage = () => {
                       padding:"12px 12px 12px 36px",
                       border:"1px solid #E5E5E5",
                       borderRadius:"4px",
-                      fontSize:"14px",
+                      fontSize:"16px",
                       color:"#171717",
                       backgroundColor:"#fff",
                       outline:"none",
@@ -314,15 +329,15 @@ const ContactPage = () => {
               </div>
 
               {/* Message Field */}
-              <div style={{marginBottom:"32px"}}>
+              <div >
                 <label 
                   htmlFor="message"
                   style={{
                     display:"block",
                     color:"#171717",
-                    fontSize:"14px",
+                    fontSize:"16px",
                     fontWeight:"500",
-                    marginBottom:"8px"
+                   
                   }}
                 >
                   Message <span style={{color:"#ff0000"}}>*</span>
@@ -334,7 +349,7 @@ const ContactPage = () => {
                       left:"12px",
                       top:"16px",
                       color:"#666",
-                      fontSize:"14px"
+                      fontSize:"16px"
                     }} 
                   />
                   <textarea
@@ -344,13 +359,13 @@ const ContactPage = () => {
                     onChange={handleChange}
                     placeholder="Enter your message here..."
                     required
-                    rows={5}
+                    rows={2}
                     style={{
                       width:"100%",
                       padding:"12px 12px 12px 36px",
                       border:"1px solid #E5E5E5",
                       borderRadius:"4px",
-                      fontSize:"14px",
+                      fontSize:"16px",
                       color:"#171717",
                       backgroundColor:"#fff",
                       outline:"none",
@@ -369,14 +384,14 @@ const ContactPage = () => {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-100 w-md-auto d-flex align-items-center justify-content-center submit-btn-desktop"
+                  className="w-100 mt-2 w-md-auto d-flex align-items-center justify-content-center submit-btn-desktop contact-submit-btn-mobile"
                   style={{
                     backgroundColor: isSubmitting ? "#999" : "#171717",
                     color:"#fff",
                     border:"none",
                     padding:"12px 24px",
-                    borderRadius:"4px",
-                    fontSize:"14px",
+                    borderRadius:"0",
+                    fontSize:"16px",
                     fontWeight:"500",
                     cursor: isSubmitting ? "not-allowed" : "pointer",
                     gap:"8px",
@@ -406,7 +421,7 @@ const ContactPage = () => {
                 {submitStatus === 'success' && (
                   <p style={{
                     color: "#28a745",
-                    fontSize: "14px",
+                    fontSize: "16px",
                     marginTop: "12px",
                     marginBottom: 0
                   }}>
@@ -416,7 +431,7 @@ const ContactPage = () => {
                 {submitStatus === 'error' && (
                   <p style={{
                     color: "#dc3545",
-                    fontSize: "14px",
+                    fontSize: "16px",
                     marginTop: "12px",
                     marginBottom: 0
                   }}>

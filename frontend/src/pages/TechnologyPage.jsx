@@ -34,7 +34,7 @@ const TechnologyPage = () => {
               <span className='d-block'>Into Every Thread</span>
             </h1>
             <p className="d-none d-md-block" style={{
-              fontSize: "14px",
+              fontSize: "16px",
               lineHeight: "20px",
               color: '#171717', opacity: "60%"
             }}>Building India's first fully integrated fashion-tech ecosystem</p>
@@ -65,16 +65,26 @@ const TechnologyPage = () => {
                 <span className='d-block'>Scalability Through</span>
                 <span className='d-block'>Systemization</span>
               </h3>
-              <p style={{
-                fontSize: '14px', lineHeight: '20px', color: '#171717', opacity: "60%", alignContent:
-                  'justify'
-              }}>
+              <p    style={{
+                    fontSize: "16px",
+                    color: "#171717",
+                    opacity: "0.6",
+                    textAlign: "justify",
+                    lineHeight: "1.6",
+                    marginTop: "6px",
+                  }}>
                 Building the future of fashion Brynex Apparels is home to Kerala's most recognized At Brynex Apparels, we believe scalability in retail comes from systemization. Our in-house tech division develops software that automates every layer from daily operations to financial reporting and training.</p>
 
-              <p className='mt-3' style={{
-                fontSize: '14px', lineHeight: '20px', color: '#171717', opacity: "60%", alignContent:
-                  'justify', marginBottom: '-12px'
-              }}>Our vision is to build India's first fully integrated fashion-tech ecosystem powered by data, design, and discipline. Fashion rental and retail brands thrive through innovation and excellence.
+              <p className='mt-3'    style={{
+                    fontSize: "16px",
+                    color: "#171717",
+                    opacity: "0.6",
+                    textAlign: "justify",
+                    lineHeight: "1.6",
+                    marginTop: "6px",
+                    marginBottom: "-12px",
+                  }}>
+              Our vision is to build India's first fully integrated fashion-tech ecosystem powered by data, design, and discipline. Fashion rental and retail brands thrive through innovation and excellence.
               </p>
             </Col>
 
@@ -106,7 +116,7 @@ const TechnologyPage = () => {
               <FaArrowUp
                 className="d-md-none"
                 style={{
-                  fontSize: "14px",
+                  fontSize: "16px",
                   color: "#171717",
                   marginBottom: "8px",
                 }}
@@ -133,7 +143,7 @@ const TechnologyPage = () => {
                 <span
                   className="fw-normal d-block"
                   style={{
-                    fontSize: "13px",
+                    fontSize: "16px",
                     color: "#171717",
                     opacity: "0.6",
                     textAlign: "justify",
@@ -154,7 +164,7 @@ const TechnologyPage = () => {
                 <p
                   className="fw-normal"
                   style={{
-                    fontSize: "14px",
+                    fontSize: "16px",
                     color: "#171717",
                     opacity: "0.6",
                     textAlign: "justify",
@@ -172,7 +182,7 @@ const TechnologyPage = () => {
 
             {/* RootLMS */}
             <Col xs={12} md={3} className="mb-4 mb-md-0" style={{ paddingBottom: "30px" }}>
-              <FaArrowUp className="d-md-none" style={{ fontSize: "14px", color: "#171717", marginBottom: "8px" }} />
+              <FaArrowUp className="d-md-none" style={{ fontSize: "16px", color: "#171717", marginBottom: "8px" }} />
               <FaArrowUp className="d-none d-md-block" style={{ fontSize: "16px", color: "#171717", marginBottom: "8px" }} />
 
               {/* Mobile View */}
@@ -182,7 +192,7 @@ const TechnologyPage = () => {
                 <span
                   className="fw-normal d-block"
                   style={{
-                    fontSize: "13px",
+                    fontSize: "16px",
                     color: "#171717",
                     opacity: "0.6",
                     textAlign: "justify",
@@ -200,7 +210,7 @@ const TechnologyPage = () => {
                 <p
                   className="fw-normal"
                   style={{
-                    fontSize: "14px",
+                    fontSize: "16px",
                     color: "#171717",
                     opacity: "0.6",
                     textAlign: "justify",
@@ -215,7 +225,7 @@ const TechnologyPage = () => {
 
             {/* HRMS */}
             <Col xs={12} md={3} className="mb-4 mb-md-0" style={{ paddingBottom: "30px" }}>
-              <FaArrowUp className="d-md-none" style={{ fontSize: "14px", color: "#171717", marginBottom: "8px" }} />
+              <FaArrowUp className="d-md-none" style={{ fontSize: "16px", color: "#171717", marginBottom: "8px" }} />
               <FaArrowUp className="d-none d-md-block" style={{ fontSize: "16px", color: "#171717", marginBottom: "8px" }} />
 
               {/* Mobile */}
@@ -225,7 +235,7 @@ const TechnologyPage = () => {
                 <span
                   className="fw-normal d-block"
                   style={{
-                    fontSize: "13px",
+                    fontSize: "16px",
                     color: "#171717",
                     opacity: "0.6",
                     textAlign: "justify",
@@ -243,7 +253,7 @@ const TechnologyPage = () => {
                 <p
                   className="fw-normal"
                   style={{
-                    fontSize: "14px",
+                    fontSize: "16px",
                     color: "#171717",
                     opacity: "0.6",
                     textAlign: "justify",
@@ -258,7 +268,7 @@ const TechnologyPage = () => {
 
             {/* Item Search */}
             <Col xs={12} md={3} style={{ paddingBottom: "30px" }}>
-              <FaArrowUp className="d-md-none" style={{ fontSize: "14px", color: "#171717", marginBottom: "8px" }} />
+              <FaArrowUp className="d-md-none" style={{ fontSize: "16px", color: "#171717", marginBottom: "8px" }} />
               <FaArrowUp className="d-none d-md-block" style={{ fontSize: "16px", color: "#171717", marginBottom: "8px" }} />
 
               {/* Mobile */}
@@ -268,7 +278,7 @@ const TechnologyPage = () => {
                 <span
                   className="fw-normal d-block"
                   style={{
-                    fontSize: "13px",
+                    fontSize: "16px",
                     color: "#171717",
                     opacity: "0.6",
                     textAlign: "justify",
@@ -286,7 +296,7 @@ const TechnologyPage = () => {
                 <p
                   className="fw-normal"
                   style={{
-                    fontSize: "14px",
+                    fontSize: "16px",
                     color: "#171717",
                     opacity: "0.6",
                     textAlign: "justify",
@@ -301,7 +311,7 @@ const TechnologyPage = () => {
 
             {/* AI Business Analyst */}
             <Col xs={12} md={3} style={{ paddingBottom: "30px" }}>
-              <FaArrowUp className="d-md-none" style={{ fontSize: "14px", color: "#171717", marginBottom: "8px" }} />
+              <FaArrowUp className="d-md-none" style={{ fontSize: "16px", color: "#171717", marginBottom: "8px" }} />
               <FaArrowUp className="d-none d-md-block" style={{ fontSize: "16px", color: "#171717", marginBottom: "8px" }} />
 
               {/* Mobile */}
@@ -311,7 +321,7 @@ const TechnologyPage = () => {
                 <span
                   className="fw-normal d-block"
                   style={{
-                    fontSize: "13px",
+                    fontSize: "16px",
                     color: "#171717",
                     opacity: "0.6",
                     textAlign: "justify",
@@ -329,7 +339,7 @@ const TechnologyPage = () => {
                 <p
                   className="fw-normal"
                   style={{
-                    fontSize: "14px",
+                    fontSize: "16px",
                     color: "#171717",
                     opacity: "0.6",
                     textAlign: "justify",
@@ -344,7 +354,7 @@ const TechnologyPage = () => {
 
             {/* Store Insights */}
             <Col xs={12} md={3} style={{ paddingBottom: "30px" }}>
-              <FaArrowUp className="d-md-none" style={{ fontSize: "14px", color: "#171717", marginBottom: "8px" }} />
+              <FaArrowUp className="d-md-none" style={{ fontSize: "16px", color: "#171717", marginBottom: "8px" }} />
               <FaArrowUp className="d-none d-md-block" style={{ fontSize: "16px", color: "#171717", marginBottom: "8px" }} />
 
               {/* Mobile */}
@@ -354,7 +364,7 @@ const TechnologyPage = () => {
                 <span
                   className="fw-normal d-block"
                   style={{
-                    fontSize: "13px",
+                    fontSize: "16px",
                     color: "#171717",
                     opacity: "0.6",
                     textAlign: "justify",
@@ -372,7 +382,7 @@ const TechnologyPage = () => {
                 <p
                   className="fw-normal"
                   style={{
-                    fontSize: "14px",
+                    fontSize: "16px",
                     color: "#171717",
                     opacity: "0.6",
                     textAlign: "justify",
