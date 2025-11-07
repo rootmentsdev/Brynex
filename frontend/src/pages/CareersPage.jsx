@@ -222,7 +222,7 @@ const CareersPage = () => {
      
 
       {/* --- Current Openings --- */}
-      <div className="mx-3 ms-md-5 mt-4 ">
+      <div id="current-openings" className="mx-3 ms-md-5 mt-4 ">
         <Row className="align-items-center">
         <Col md={6}>
           <h3 style={{ fontSize: "40px", color: "#171717" }}>
@@ -288,21 +288,23 @@ const CareersPage = () => {
             lg={4}
             key={index}
             className="mb-4 d-flex"
-            style={{ height: "350px" }}
           >
             <div
-              className="p-4 w-100 h-100 d-flex flex-column justify-content-between"
+              className="p-3 p-md-4 w-100 d-flex flex-column justify-content-between"
               style={{
                 border: "1px solid #E5E5E5",
-                borderRadius: "4px",
+                borderRadius: "0",
                 backgroundColor: "#fff",
                 transition: "all 0.3s ease",
+                minHeight: "400px",
+                height: "100%"
               }}
             >
               <div>
                 <h5
+                  className="mb-3"
                   style={{
-                    fontSize: "18px",
+                    fontSize: "20px",
                     fontWeight: "600",
                     color: "#171717",
                   }}
@@ -311,63 +313,65 @@ const CareersPage = () => {
                 </h5>
 
                 <p
+                  className="mb-1"
                   style={{
-                    fontSize: "13px",
+                    fontSize: "14px",
                     color: "#171717",
                     opacity: "0.6",
-                    marginTop: "8px",
-                    marginBottom: "2px",
+                    fontWeight: "500",
                   }}
                 >
                   Skills
                 </p>
                 <p
+                  className="mb-3"
                   style={{
                     fontSize: "16px",
                     color: "#171717",
-                   
                     textAlign: "justify",
                     lineHeight: "1.6",
-                    marginTop: "6px",
+                    marginTop: "4px",
                   }}>
                   {item.desc}
                 </p>
 
                 <p
+                  className="mb-1"
                   style={{
-                    fontSize: "13px",
+                    fontSize: "14px",
                     color: "#171717",
                     opacity: "0.6",
-                    marginBottom: "2px",
+                    fontWeight: "500",
                   }}
                 >
                   Experience
                 </p>
                 <p
+                  className="mb-3"
                   style={{
                     fontSize: "16px",
                     color: "#171717",
-                    marginBottom: "12px",
                   }}
                 >
                   {item.expdesc}
                 </p>
 
                 <p
+                  className="mb-1"
                   style={{
-                    fontSize: "13px",
+                    fontSize: "14px",
                     color: "#171717",
                     opacity: "0.6",
-                    marginBottom: "2px",
+                    fontWeight: "500",
                   }}
                 >
                   Location
                 </p>
                 <p
+                  className="mb-4"
                   style={{
                     fontSize: "16px",
                     color: "#171717",
-                    marginBottom: "20px",
                   }}
                 >
                   {item.locdesc}
@@ -376,13 +380,13 @@ const CareersPage = () => {
 
               <Button
                 variant="dark"
+                className="w-100 w-md-auto"
                 style={{
                   backgroundColor: "#171717",
                   border: "none",
                   fontSize: "16px",
-                  padding: "8px 18px",
-                  borderRadius: "2px",
-                  width: "fit-content",
+                  padding: "12px 24px",
+                  borderRadius: "0",
                   transition: "all 0.3s ease",
                   cursor: "pointer"
                 }}
@@ -439,8 +443,7 @@ const CareersPage = () => {
             }}
           >
             <FaChevronLeft className="me-1" style={{ fontSize: "10px", color: "#171717" }} /> 
-            <span className="d-none d-sm-inline" style={{ color: "#171717" }}>Previous</span>
-            <span className="d-sm-none" style={{ color: "#171717" }}>Prev</span>
+            <span style={{ color: "#171717" }}>Previous</span>
           </Button>
 
           <div className="d-flex gap-1 gap-md-2 align-items-center overflow-auto" style={{ maxWidth: "100%" }}>
@@ -511,8 +514,7 @@ const CareersPage = () => {
               }
             }}
           >
-            <span className="d-none d-sm-inline" style={{ color: "#171717" }}>Next</span>
-            <span className="d-sm-none" style={{ color: "#171717" }}>Next</span>
+            <span style={{ color: "#171717" }}>Next</span>
             <FaChevronRight className="ms-1" style={{ fontSize: "10px", color: "#171717" }} />
           </Button>
         </div>

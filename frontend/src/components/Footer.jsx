@@ -1,9 +1,21 @@
 import React from 'react'
 import { Container, Row, Col, Button } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { FaFacebook, FaLinkedinIn, FaInstagram, FaArrowRight } from 'react-icons/fa'
 
 const Footer = () => {
+  const location = useLocation()
+
+  const handleCareersClick = (e) => {
+    if (location.pathname === '/careers') {
+      e.preventDefault()
+      const element = document.getElementById('current-openings')
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      }
+    }
+  }
+
   return (
     <footer style={{ backgroundColor: '#171717' ,width: '100%' }}>
       <style>
@@ -115,7 +127,11 @@ const Footer = () => {
             <p className="text-white mb-3 d-none d-md-block" style={{ fontSize: '14px' }}>
               Looking for a job opportunity?
             </p>
-            <Link to="/careers" className="text-decoration-none d-flex justify-content-center justify-content-md-start">
+            <Link 
+              to="/careers" 
+              onClick={handleCareersClick}
+              className="text-decoration-none d-flex justify-content-center justify-content-md-start"
+            >
               <Button
                 className="d-flex align-items-center gap-2 border-white footer-btn-desktop"
                 style={{ 

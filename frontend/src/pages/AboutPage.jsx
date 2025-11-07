@@ -28,33 +28,53 @@ const AboutPage = () => {
         <Col md={7} className="mb-4" style={{ color: "#171717"}}>
           <p className='d-none d-md-block'  style={{
                     fontSize: "16px",
-                    color: "#171717",
+                  
                     opacity: "0.6",
                     textAlign: "justify",
                     lineHeight: "1.6",
                     marginTop: "6px",
+                    marginBottom: "10px",
                   }}>
             Brynex Apparels was founded with a mission to organize and modernize
             the Indian fashion rental and retail industry.
-            <br />
-            Starting as a single store, we have grown into a parent organization
-            managing men's fashion, bridal wear, jewelry, and tech solutions —
-            all designed to create a seamless ecosystem for scale and performance.
+            <br  />
+            <span className='d-none d-md-block'  style={{
+                    fontSize: "16px",
+                   
+                    
+                    textAlign: "justify",
+                    lineHeight: "1.6",
+                    marginTop: "6px",
+                  }}>
+              Starting as a single store, we have grown into a parent organization
+              managing men's fashion, bridal wear, jewelry, and tech solutions —
+              all designed to create a seamless ecosystem for scale and performance.
+            </span>
           </p>
           <p className='d-md-none' style={{
                     fontSize: "16px",
-                    color: "#171717",
+                    
                     opacity: "0.6",
                     textAlign: "justify",
                     lineHeight: "1.6",
                     marginTop: "6px",
+                    marginBottom: "16px",
                   }}>
             Brynex Apparels was founded with a mission to organize and modernize
             the Indian fashion rental and retail industry.
-            <br />
-            Starting as a single store, we have grown into a parent organization
-            managing men's fashion, bridal wear, jewelry, and tech solutions —
-            all designed to create a seamless ecosystem for scale and performance.
+           <span className='d-md-none' style={{
+                    fontSize: "16px",
+                   
+                    
+                    textAlign: "justify",
+                    lineHeight: "1.6",
+                    marginTop: "16px",
+                    display: "block",
+                  }}>
+              Starting as a single store, we have grown into a parent organization
+              managing men's fashion, bridal wear, jewelry, and tech solutions —
+              all designed to create a seamless ecosystem for scale and performance.
+           </span>
           </p>
         </Col>
 
@@ -101,54 +121,58 @@ const AboutPage = () => {
     <div style={{marginTop:"-75px"}} className=' mx-3 ms-md-5 mb-4 ' >       
          <h3 className='mb-5' style={{
           fontSize:"42px",
-         
-         }} >Our Core Pillers</h3>
+          color: "#171717"
+         }} >Our Core Pillars</h3>
                     <Row style={{
                       color: "#171717"
-                    }} className="d-flex justify-content-between align-items-center">
-                        <Col xs={6} md={3} className="mb-3 mb-md-0 ">
+                    }} className="g-3 g-md-0">
+                        <Col xs={6} md={3} className="mb-3 mb-md-0">
                             <h5 style={{
                                 fontSize:"24px",
-                                color: "#171717"
-                            }} className="">
-                                Retail Excellence<br />
-                                <span className="fw-normal" style={{ fontSize: '16px', color: '#171717', opacity: "60%" }}>
-                                    Employees
-                                </span>
+                                color: "#171717",
+                                marginBottom: "8px"
+                            }}>
+                                Retail Excellence
                             </h5>
+                            <span className="fw-normal d-block" style={{ fontSize: '16px', color: '#171717', opacity: "0.6" }}>
+                                Employees
+                            </span>
                         </Col>
                         <Col xs={6} md={3} className="mb-3 mb-md-0">
                             <h5 style={{
                                 fontSize:"24px",
-                                color: "#171717"
-                            }} className="">
-                                Tech Innovation<br />
-                                <span className="fw-normal" style={{ fontSize: '16px', color: '#171717', opacity: "60%" }}>
-                                    Fashion & Rental Brands
-                                </span>
+                                color: "#171717",
+                                marginBottom: "8px"
+                            }}>
+                                Tech Innovation
                             </h5>
+                            <span className="fw-normal d-block" style={{ fontSize: '16px', color: '#171717', opacity: "0.6" }}>
+                                Fashion & Rental Brands
+                            </span>
                         </Col>
                         <Col xs={6} md={3} className="mb-3 mb-md-0">
                             <h5 style={{
                                 fontSize:"24px",
-                                color: "#171717"
-                            }} className="">
-                                People & Culture<br />
-                                <span className="fw-normal" style={{ fontSize: '16px', color: '#171717', opacity: "60%" }}>
-                                    Proprietary Software Platforms
-                                </span>
+                                color: "#171717",
+                                marginBottom: "8px"
+                            }}>
+                                People & Culture
                             </h5>
+                            <span className="fw-normal d-block" style={{ fontSize: '16px', color: '#171717', opacity: "0.6" }}>
+                                Proprietary Software Platforms
+                            </span>
                         </Col>
-                        <Col xs={6} md={3}>
+                        <Col xs={6} md={3} className="mb-3 mb-md-0">
                             <h5 style={{
                                 fontSize:"24px",
-                                color: "#171717"
-                            }} className="">
-                            Customer Excellence <br />
-                                <span className="fw-normal" style={{ fontSize: '16px', color: '#171717', opacity: "60%" }}>
-                                    Stores Across Kerala
-                                </span>
+                                color: "#171717",
+                                marginBottom: "8px"
+                            }}>
+                                Customer Excellence
                             </h5>
+                            <span className="fw-normal d-block" style={{ fontSize: '16px', color: '#171717', opacity: "0.6" }}>
+                                Stores Across Kerala
+                            </span>
                         </Col>
                     </Row>
 
