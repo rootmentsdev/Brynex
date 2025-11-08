@@ -76,7 +76,7 @@ const HomePage = () => {
                         </Col>
                         <Col xs={6} md={3} className="mb-4 mb-md-0">
                             <h4 className="text-dark fw-bold mb-2" style={{ fontSize:"1.6rem" }}>
-                                20+
+                                15+
                             </h4>
                             <p className="text-dark fw-normal mb-0" style={{ fontSize: '16px', opacity: "0.6" }}>
                                 Stores Across Kerala

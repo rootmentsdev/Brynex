@@ -3,6 +3,18 @@ import { Container } from 'react-bootstrap';
 import { Row, Col, Button } from 'react-bootstrap';
 import { FaUser, FaEnvelope, FaArrowRight, FaTag, FaCommentAlt } from 'react-icons/fa';
 
+const allowedEmailPattern = /^[a-zA-Z0-9._%+-]+@(gmail|outlook|yahoo)\.com$/i;
+
+const validateEmailDomain = (email) => {
+  if (!email) {
+    return 'Email is required.';
+  }
+  if (!allowedEmailPattern.test(email.trim())) {
+    return 'Please use a Gmail, Outlook, or Yahoo email address.';
+  }
+  return '';
+};
+
 const ContactPage = () => {
   const [formData, setFormData] = useState({
     fullName: '',
@@ -12,15 +24,27 @@ const ContactPage = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null); // 'success' or 'error'
+  const [fieldErrors, setFieldErrors] = useState({
+    email: ''
+  });
 
   // Google Apps Script Web App URL
   const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwJIwWovoxZkawPGDg_Yse2fBZpfFOrmjOsBX0vOZ5XHmuLikiYjO0t5Cd-V7_NdHzS/exec';
 
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value
+    }));
+
+    if (name === 'email') {
+      setFieldErrors((prev) => ({
+        ...prev,
+        email: validateEmailDomain(value)
+      }));
+    }
+
     // Clear status when user starts typing again
     if (submitStatus) setSubmitStatus(null);
   };
@@ -29,6 +53,25 @@ const ContactPage = () => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus(null);
+
+    const emailError = validateEmailDomain(formData.email);
+    if (emailError) {
+      setFieldErrors((prev) => ({
+        ...prev,
+        email: emailError
+      }));
+
+      // Bring the email field into view for accessibility
+      const emailField = document.getElementById('email');
+      if (emailField) {
+        emailField.focus();
+        emailField.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+
+      setIsSubmitting(false);
+      setSubmitStatus('error');
+      return;
+    }
 
     try {
       // Convert form data to URL-encoded format for Google Apps Script
@@ -57,6 +100,9 @@ const ContactPage = () => {
         email: '',
         subject: '',
         message: ''
+      });
+      setFieldErrors({
+        email: ''
       });
 
       // Clear success message after 5 seconds
@@ -264,7 +310,7 @@ const ContactPage = () => {
                     style={{
                       width:"100%",
                       padding:"12px 12px 12px 36px",
-                      border:"1px solid #E5E5E5",
+                      border: fieldErrors.email ? "1px solid #ff4d4f" : "1px solid #E5E5E5",
                       borderRadius:"4px",
                       fontSize:"16px",
                       color:"#171717",
@@ -273,9 +319,14 @@ const ContactPage = () => {
                       transition:"border-color 0.3s ease"
                     }}
                     onFocus={(e) => e.target.style.borderColor = "#171717"}
-                    onBlur={(e) => e.target.style.borderColor = "#E5E5E5"}
+                    onBlur={(e) => e.target.style.borderColor = fieldErrors.email ? "#ff4d4f" : "#E5E5E5"}
                   />
                 </div>
+                {fieldErrors.email && (
+                  <small style={{ color: '#ff4d4f', display: 'block', marginTop: '6px' }}>
+                    {fieldErrors.email}
+                  </small>
+                )}
               </div>
 
               {/* Subject Field */}
