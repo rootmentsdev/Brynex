@@ -10,18 +10,19 @@ const AboutPage = () => {
       <div className='mx-3 ms-md-5 mt-4 '>
         <div >
           <p style={{fontSize:"16px",opacity:"0.6",color:"#171717"}}>//About</p>
-          <h1 className=' mb-4 ' style={{
+          <h1 className='about-hero-title '
+         style={{
             fontSize: "48px", fontWeight: "500",
-            marginBottom: '5px',
+          
             color: '#171717',
             lineHeight: "1.2"
           }}>
-            <span className='d-block'>Where Fashion Meets</span>
-            <span className='d-block'>Systems</span>
+            <span className='about-hero-line'>Where Fashion</span>
+            <span className='about-hero-line'>Meets Systems</span>
           </h1>
         </div>
       </div>
-    <div style={{ marginTop: "30px" }} className="mx-3 ms-md-5 mb-5 pb-5">
+    <div style={{ marginTop: "20px" }} className="mx-3 ms-md-5 mb-5 pb-5">
       <Row style={{ color: "#171717" }} className="align-items-center">
         
         {/* Left Column */}

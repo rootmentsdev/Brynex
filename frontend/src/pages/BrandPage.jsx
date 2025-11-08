@@ -28,7 +28,7 @@ const BrandPage = () => {
       {/* Title Section */}
       <div className="mx-3 ms-md-5 mt-4 mb-4" >
         <p className="text-dark mb-2" style={{ fontSize: "16px", opacity: "0.6" }}>//Brands</p>
-        <h1 className="mb-3 text-dark fw-normal" style={{ fontSize: "48px", lineHeight: "1.2" }}>
+        <h1 className="mb-3  " style={{ fontSize: "48px", lineHeight: "1.2", fontWeight: '500',color: '#171717'}}>
           <span className='d-block'>Explore Our</span>
           <span className='d-block'>Premium Brands</span>
         </h1>
@@ -82,7 +82,7 @@ const BrandPage = () => {
               Premium men's wedding rental and fashion brand offering suits, tuxedos, and accessories
             </p>
             <div className="brand-button-container" style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-              <Button className='w-100 pt-3 pb-3 mb-0 w-md-auto d-flex align-items-center justify-content-center submit-btn-desktop' style={{
+              <Button as={Link} to="https://suitorguy.com/" className='w-100 pt-3 pb-3 mb-0 w-md-auto d-flex align-items-center justify-content-center submit-btn-desktop text-white text-decoration-none' style={{
                 borderRadius: 0,
                 backgroundColor: '#171717',
                 border: 'none',
@@ -99,8 +99,8 @@ const BrandPage = () => {
                 e.currentTarget.style.transform = 'translateY(0)';
                 e.currentTarget.style.boxShadow = 'none';
               }}
-              > 
-                <Link style={{fontSize:"15px"}} to="https://suitorguy.com/" className='text-white text-decoration-none'>Visit Website<span className='ms-2'><FaArrowRight /></span></Link>
+              >
+                Visit Website<span className='ms-2'><FaArrowRight /></span>
               </Button>
             </div>
           </Col>
@@ -130,7 +130,7 @@ const BrandPage = () => {
               Kerala's refined bridal and women's wear destination, featuring bridal gowns, partywear, jewelry, and accessories.
             </p>
             <div className="brand-button-container" style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-              <Button className='w-100 pt-3 pb-3 mb-0 w-md-auto d-flex align-items-center justify-content-center submit-btn-desktop' style={{
+              <Button as={Link} to="/brand" className='w-100 pt-3 pb-3 mb-0 w-md-auto d-flex align-items-center justify-content-center submit-btn-desktop text-white text-decoration-none' style={{
                 borderRadius: 0,
                 backgroundColor: '#171717',
                 border: 'none',
@@ -147,8 +147,8 @@ const BrandPage = () => {
                 e.currentTarget.style.transform = 'translateY(0)';
                 e.currentTarget.style.boxShadow = 'none';
               }}
-              > 
-                <Link to="/brand" style={{fontSize:"15px"}} className='text-white text-decoration-none'>Visit Website<span className='ms-2'><FaArrowRight /></span></Link>
+              >
+                Visit Website<span className='ms-2'><FaArrowRight /></span>
               </Button>
             </div>
           </Col>
@@ -177,7 +177,7 @@ const BrandPage = () => {
               Premium men's wedding rental and fashion brand offering suits, tuxedos, and accessories
             </p>
             <div className="brand-button-container" style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-              <Button className='w-100 pt-3 pb-3 mb-0 w-md-auto d-flex align-items-center justify-content-center submit-btn-desktop' style={{
+              <Button as={Link} to="https://www.dapprsquad.com/" className='w-100 pt-3 pb-3 mb-0 w-md-auto d-flex align-items-center justify-content-center submit-btn-desktop text-white text-decoration-none' style={{
                 borderRadius: 0,
                 backgroundColor: '#171717',
                 border: 'none',
@@ -194,8 +194,8 @@ const BrandPage = () => {
                 e.currentTarget.style.transform = 'translateY(0)';
                 e.currentTarget.style.boxShadow = 'none';
               }}
-              > 
-                <Link style={{fontSize:"15px"}} to="https://www.dapprsquad.com/" className='text-white text-decoration-none'>Visit Website<span className='ms-2'><FaArrowRight /></span></Link>
+              >
+                Visit Website<span className='ms-2'><FaArrowRight /></span>
               </Button>
             </div>
           </Col>

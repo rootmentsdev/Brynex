@@ -22,21 +22,14 @@ const HomePage = () => {
                 }
             </style>
             <div className='mx-3 ms-md-5 mt-4' style={{  marginBottom: '40px' }}>
-                <h1 style={{
-                    fontSize: '48px',
-                    fontWeight: '500',
-                    marginBottom: '5px',
-                    color: '#171717',
-                    lineHeight: '1.2'
-                }}>
-                    <span className='d-block'>Shaping The</span>
-                    <span className='d-block'>Future Of</span>
-                    <span className='d-block'>Fashion & Retail</span>
+                <h1 style={{fontSize: '48px', fontWeight: '500', marginBottom: '5px', color: '#171717', lineHeight: '1.2'}} >
+                    Shaping the Future of <br /> Fashion & Retail
                 </h1>
                 <p  style={{
                     fontSize: "16px",
                     color: "#171717",
                     opacity: "0.6",
+                
                     textAlign: "justify",
                     lineHeight: "1.6",
                     marginTop: "6px",
@@ -90,26 +83,31 @@ const HomePage = () => {
                             </p>
                         </Col>
                          <div  style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-                <Button  className='w-100 pt-3 pb-3  mb-4  w-md-auto mt-5 d-flex align-items-center justify-content-center  submit-btn-desktop' style={{
+                <Button
+                  as={Link}
+                  to="/brand"
+                  className='w-100 pt-3 pb-3 mb-4 w-md-auto mt-5 d-flex align-items-center justify-content-center submit-btn-desktop text-white text-decoration-none'
+                  style={{
                     width: 263,
-                  
                     borderRadius: 0,
                     backgroundColor: '#171717',
                     border: 'none',
                     transition: 'all 0.3s ease',
                     cursor: 'pointer'
-                }}
-                onMouseEnter={(e) => {
+                  }}
+                  onMouseEnter={(e) => {
                     e.currentTarget.style.backgroundColor = '#333';
                     e.currentTarget.style.transform = 'translateY(-2px)';
                     e.currentTarget.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
-                }}
-                onMouseLeave={(e) => {
+                  }}
+                  onMouseLeave={(e) => {
                     e.currentTarget.style.backgroundColor = '#171717';
                     e.currentTarget.style.transform = 'translateY(0)';
                     e.currentTarget.style.boxShadow = 'none';
-                }}
-                > <Link to="/brand" className='text-white text-decoration-none'>Explore Our Brands<span className='ms-1'><FaArrowRight /></span></Link></Button>
+                  }}
+                >
+                  Explore Our Brands<span className='ms-1'><FaArrowRight /></span>
+                </Button>
                
             </div>
                     </Row>

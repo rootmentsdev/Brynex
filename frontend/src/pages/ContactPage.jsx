@@ -179,7 +179,7 @@ const ContactPage = () => {
             <h3 style={{color:"#171717", fontSize:"24px", fontWeight:"500", marginBottom:"20px"}}>Send Us a Message</h3>
             <form onSubmit={handleSubmit}>
               {/* Full Name Field */}
-              <div >
+              <div style={{ marginTop: '2px' }}>
                 <label 
                   htmlFor="fullName"
                   style={{
@@ -229,7 +229,7 @@ const ContactPage = () => {
               </div>
 
               {/* Email Field */}
-              <div >
+              <div style={{ marginTop: '2px' }}>
                 <label 
                   htmlFor="email"
                   style={{
@@ -279,7 +279,7 @@ const ContactPage = () => {
               </div>
 
               {/* Subject Field */}
-              <div >
+              <div style={{ marginTop: '2px' }}>
                 <label 
                   htmlFor="subject"
                   style={{
@@ -329,7 +329,7 @@ const ContactPage = () => {
               </div>
 
               {/* Message Field */}
-              <div >
+              <div style={{ marginTop: '2px' }}>
                 <label 
                   htmlFor="message"
                   style={{
