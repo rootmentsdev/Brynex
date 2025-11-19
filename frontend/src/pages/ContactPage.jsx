@@ -214,11 +214,11 @@ const ContactPage = () => {
             </div>
             <div style={{marginBottom:"12px"}}>
               <p style={{opacity:"0.6",color:"#171717",fontSize:"16px", marginBottom:"4px"}}>Phone</p>
-              <p style={{color:"#171717", fontSize:"18px"}}>+91 98765 43210</p>
+              <p style={{color:"#171717", fontSize:"18px"}}>+91 9946366655</p>
             </div>
             <div>
               <p style={{opacity:"0.6",color:"#171717",fontSize:"16px", marginBottom:"4px"}}>Email</p>
-              <p style={{color:"#171717", fontSize:"18px"}}>brynex@gmail.com</p>
+              <p style={{color:"#171717", fontSize:"18px"}}>brynexapparels@gmail.com</p>
             </div>
           </Col>
           <Col md={6}>
