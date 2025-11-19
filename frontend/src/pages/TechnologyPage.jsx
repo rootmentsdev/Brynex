@@ -6,16 +6,6 @@ import { FaArrowUp } from 'react-icons/fa';
 const TechnologyPage = () => {
   return (
     <>
-      <style>{`
-        @media (min-width: 768px) {
-          .platforms-row {
-            gap: 40px !important;
-          }
-          .platforms-row .col {
-            padding-bottom: 50px !important;
-          }
-        }
-      `}</style>
       <Container>
         <div className='mx-3 ms-md-5 mt-4 '>
           <div >
@@ -101,121 +91,88 @@ const TechnologyPage = () => {
             fontSize: "42px",
 
           }} >Our In-House Platforms</h3>
-          {/* Single Row */}
-          <Row className="d-flex flex-column flex-md-row justify-content-between align-items-start platforms-row" style={{
-            color: "#171717",
-            gap: '15px'
-          }}>
+          {/* Platform Cards */}
+          <Row className="justify-content-start align-items-start">
             <Col
               xs={12}
-              md={3}
-              className="mb-4 mb-md-0"
-              style={{ paddingBottom: "30px" }}
+              md={6}
+              lg={4}
+              className="mb-4 d-flex"
             >
-              {/* Arrow Icon */}
-              <FaArrowUp
-                className="d-md-none"
+              <div
+                className="p-3 p-md-4 w-100 d-flex flex-column"
                 style={{
-                  fontSize: "16px",
-                  color: "#171717",
-                  marginBottom: "8px",
-                }}
-              />
-              <FaArrowUp
-                className="d-none d-md-block"
-                style={{
-                  fontSize: "16px",
-                  color: "#171717",
-                  marginBottom: "8px",
-                }}
-              />
-
-              {/* Mobile View */}
-              <h5
-                className="d-md-none"
-                style={{
-                  fontSize: "20px",
-                  color: "#171717",
+                  border: "1px solid #E5E5E5",
+                  borderRadius: "0",
+                  backgroundColor: "#fff",
+                  transition: "all 0.3s ease",
+                  minHeight: "300px",
+                  height: "100%"
                 }}
               >
-                Rootfin
-                <br />
-                <span
-                  className="fw-normal d-block"
+                <FaArrowUp style={{ fontSize: "16px", color: "#171717", marginBottom: "12px" }} />
+                <h5
                   style={{
-                    fontSize: "16px",
+                    fontSize: "20px",
+                    fontWeight: "600",
                     color: "#171717",
-                    opacity: "0.6",
-                    textAlign: "justify",
-                    lineHeight: "1.6",
-                    marginTop: "6px",
+                    marginBottom: "12px",
                   }}
                 >
-                  RootFin is an advanced store-wise financial management software developed
-                  by Brynex Tech Team, enabling complete control over cash and bank
-                  transactions with real-time insights, accuracy, and effortless daily
-                  financial tracking.
-                </span>
-              </h5>
-
-              {/* Desktop / Laptop View */}
-              <div className="d-none d-md-block">
-                <h5 style={{ fontSize: "24px", color: "#171717" }}>Rootfin</h5>
+                  Rootfin
+                </h5>
                 <p
-                  className="fw-normal"
                   style={{
                     fontSize: "16px",
                     color: "#171717",
                     opacity: "0.6",
                     textAlign: "justify",
                     lineHeight: "1.6",
-                    marginTop: "8px",
+                    marginTop: "0",
                   }}
                 >
-                  RootFin is an advanced store-wise financial management software developed
-                  by Brynex Tech Team, enabling complete control over cash and bank
-                  transactions with real-time insights, accuracy, and effortless daily
-                  financial tracking.
+                  RootFin is an advanced store-wise financial management software developed by Brynex Tech Team, enabling complete control over cash and bank transactions with real-time insights, accuracy, and effortless daily financial tracking.
                 </p>
               </div>
             </Col>
 
             {/* RootLMS */}
-            <Col xs={12} md={3} className="mb-4 mb-md-0" style={{ paddingBottom: "30px" }}>
-              <FaArrowUp className="d-md-none" style={{ fontSize: "16px", color: "#171717", marginBottom: "8px" }} />
-              <FaArrowUp className="d-none d-md-block" style={{ fontSize: "16px", color: "#171717", marginBottom: "8px" }} />
-
-              {/* Mobile View */}
-              <h5 className="d-md-none" style={{ fontSize: "20px", color: "#171717" }}>
-                RootLMS
-                <br />
-                <span
-                  className="fw-normal d-block"
+            <Col
+              xs={12}
+              md={6}
+              lg={4}
+              className="mb-4 d-flex"
+            >
+              <div
+                className="p-3 p-md-4 w-100 d-flex flex-column"
+                style={{
+                  border: "1px solid #E5E5E5",
+                  borderRadius: "0",
+                  backgroundColor: "#fff",
+                  transition: "all 0.3s ease",
+                  minHeight: "300px",
+                  height: "100%"
+                }}
+              >
+                <FaArrowUp style={{ fontSize: "16px", color: "#171717", marginBottom: "12px" }} />
+                <h5
                   style={{
-                    fontSize: "16px",
+                    fontSize: "20px",
+                    fontWeight: "600",
                     color: "#171717",
-                    opacity: "0.6",
-                    textAlign: "justify",
-                    lineHeight: "1.6",
-                    marginTop: "6px",
+                    marginBottom: "12px",
                   }}
                 >
-                  RootLMS is a powerful learning management system developed by Brynex Tech Team, designed to deliver training and assessments, track staff progress, and enhance performance across all store locations.
-                </span>
-              </h5>
-
-              {/* Desktop View */}
-              <div className="d-none d-md-block">
-                <h5 style={{ fontSize: "24px", color: "#171717" }}>RootLMS</h5>
+                  RootLMS
+                </h5>
                 <p
-                  className="fw-normal"
                   style={{
                     fontSize: "16px",
                     color: "#171717",
                     opacity: "0.6",
                     textAlign: "justify",
                     lineHeight: "1.6",
-                    marginTop: "8px",
+                    marginTop: "0",
                   }}
                 >
                   RootLMS is a powerful learning management system developed by Brynex Tech Team, designed to deliver training and assessments, track staff progress, and enhance performance across all store locations.
@@ -224,41 +181,42 @@ const TechnologyPage = () => {
             </Col>
 
             {/* HRMS */}
-            <Col xs={12} md={3} className="mb-4 mb-md-0" style={{ paddingBottom: "30px" }}>
-              <FaArrowUp className="d-md-none" style={{ fontSize: "16px", color: "#171717", marginBottom: "8px" }} />
-              <FaArrowUp className="d-none d-md-block" style={{ fontSize: "16px", color: "#171717", marginBottom: "8px" }} />
-
-              {/* Mobile */}
-              <h5 className="d-md-none" style={{ fontSize: "20px", color: "#171717" }}>
-                HRMS
-                <br />
-                <span
-                  className="fw-normal d-block"
+            <Col
+              xs={12}
+              md={6}
+              lg={4}
+              className="mb-4 d-flex"
+            >
+              <div
+                className="p-3 p-md-4 w-100 d-flex flex-column"
+                style={{
+                  border: "1px solid #E5E5E5",
+                  borderRadius: "0",
+                  backgroundColor: "#fff",
+                  transition: "all 0.3s ease",
+                  minHeight: "300px",
+                  height: "100%"
+                }}
+              >
+                <FaArrowUp style={{ fontSize: "16px", color: "#171717", marginBottom: "12px" }} />
+                <h5
                   style={{
-                    fontSize: "16px",
+                    fontSize: "20px",
+                    fontWeight: "600",
                     color: "#171717",
-                    opacity: "0.6",
-                    textAlign: "justify",
-                    lineHeight: "1.6",
-                    marginTop: "6px",
+                    marginBottom: "12px",
                   }}
                 >
-                  HRMS is a comprehensive human resource management system developed by Brynex Tech Team, enabling HR managers to manage employee data, attendance, performance, and reports with efficiency and accuracy.
-                </span>
-              </h5>
-
-              {/* Desktop */}
-              <div className="d-none d-md-block">
-                <h5 style={{ fontSize: "24px", color: "#171717" }}>HRMS</h5>
+                  HRMS
+                </h5>
                 <p
-                  className="fw-normal"
                   style={{
                     fontSize: "16px",
                     color: "#171717",
                     opacity: "0.6",
                     textAlign: "justify",
                     lineHeight: "1.6",
-                    marginTop: "8px",
+                    marginTop: "0",
                   }}
                 >
                   HRMS is a comprehensive human resource management system developed by Brynex Tech Team, enabling HR managers to manage employee data, attendance, performance, and reports with efficiency and accuracy.
@@ -267,41 +225,42 @@ const TechnologyPage = () => {
             </Col>
 
             {/* Item Search */}
-            <Col xs={12} md={3} style={{ paddingBottom: "30px" }}>
-              <FaArrowUp className="d-md-none" style={{ fontSize: "16px", color: "#171717", marginBottom: "8px" }} />
-              <FaArrowUp className="d-none d-md-block" style={{ fontSize: "16px", color: "#171717", marginBottom: "8px" }} />
-
-              {/* Mobile */}
-              <h5 className="d-md-none" style={{ fontSize: "20px", color: "#171717" }}>
-                Item Search
-                <br />
-                <span
-                  className="fw-normal d-block"
+            <Col
+              xs={12}
+              md={6}
+              lg={4}
+              className="mb-4 d-flex"
+            >
+              <div
+                className="p-3 p-md-4 w-100 d-flex flex-column"
+                style={{
+                  border: "1px solid #E5E5E5",
+                  borderRadius: "0",
+                  backgroundColor: "#fff",
+                  transition: "all 0.3s ease",
+                  minHeight: "300px",
+                  height: "100%"
+                }}
+              >
+                <FaArrowUp style={{ fontSize: "16px", color: "#171717", marginBottom: "12px" }} />
+                <h5
                   style={{
-                    fontSize: "16px",
+                    fontSize: "20px",
+                    fontWeight: "600",
                     color: "#171717",
-                    opacity: "0.6",
-                    textAlign: "justify",
-                    lineHeight: "1.6",
-                    marginTop: "6px",
+                    marginBottom: "12px",
                   }}
                 >
-                  ItemSearch is an intelligent store tool developed by Brynex Tech Team, allowing staff to instantly check product booking status and ensure smooth coordination in the rental process across all branches.
-                </span>
-              </h5>
-
-              {/* Desktop */}
-              <div className="d-none d-md-block">
-                <h5 style={{ fontSize: "24px", color: "#171717" }}>Item Search</h5>
+                  Item Search
+                </h5>
                 <p
-                  className="fw-normal"
                   style={{
                     fontSize: "16px",
                     color: "#171717",
                     opacity: "0.6",
                     textAlign: "justify",
                     lineHeight: "1.6",
-                    marginTop: "8px",
+                    marginTop: "0",
                   }}
                 >
                   ItemSearch is an intelligent store tool developed by Brynex Tech Team, allowing staff to instantly check product booking status and ensure smooth coordination in the rental process across all branches.
@@ -310,41 +269,42 @@ const TechnologyPage = () => {
             </Col>
 
             {/* AI Business Analyst */}
-            <Col xs={12} md={3} style={{ paddingBottom: "30px" }}>
-              <FaArrowUp className="d-md-none" style={{ fontSize: "16px", color: "#171717", marginBottom: "8px" }} />
-              <FaArrowUp className="d-none d-md-block" style={{ fontSize: "16px", color: "#171717", marginBottom: "8px" }} />
-
-              {/* Mobile */}
-              <h5 className="d-md-none" style={{ fontSize: "20px", color: "#171717" }}>
-                AI Business Analyst
-                <br />
-                <span
-                  className="fw-normal d-block"
+            <Col
+              xs={12}
+              md={6}
+              lg={4}
+              className="mb-4 d-flex"
+            >
+              <div
+                className="p-3 p-md-4 w-100 d-flex flex-column"
+                style={{
+                  border: "1px solid #E5E5E5",
+                  borderRadius: "0",
+                  backgroundColor: "#fff",
+                  transition: "all 0.3s ease",
+                  minHeight: "300px",
+                  height: "100%"
+                }}
+              >
+                <FaArrowUp style={{ fontSize: "16px", color: "#171717", marginBottom: "12px" }} />
+                <h5
                   style={{
-                    fontSize: "16px",
+                    fontSize: "20px",
+                    fontWeight: "600",
                     color: "#171717",
-                    opacity: "0.6",
-                    textAlign: "justify",
-                    lineHeight: "1.6",
-                    marginTop: "6px",
+                    marginBottom: "12px",
                   }}
                 >
-                  AI Business Analyst is an AI-powered analytics platform developed by Brynex Tech Team, helping business owners and individuals uncover insights, analyze data, and make smarter decisions with intelligent automation.
-                </span>
-              </h5>
-
-              {/* Desktop */}
-              <div className="d-none d-md-block">
-                <h5 style={{ fontSize: "24px", color: "#171717" }}>AI Business Analyst</h5>
+                  AI Business Analyst
+                </h5>
                 <p
-                  className="fw-normal"
                   style={{
                     fontSize: "16px",
                     color: "#171717",
                     opacity: "0.6",
                     textAlign: "justify",
                     lineHeight: "1.6",
-                    marginTop: "8px",
+                    marginTop: "0",
                   }}
                 >
                   AI Business Analyst is an AI-powered analytics platform developed by Brynex Tech Team, helping business owners and individuals uncover insights, analyze data, and make smarter decisions with intelligent automation.
@@ -353,41 +313,42 @@ const TechnologyPage = () => {
             </Col>
 
             {/* Store Insights */}
-            <Col xs={12} md={3} style={{ paddingBottom: "30px" }}>
-              <FaArrowUp className="d-md-none" style={{ fontSize: "16px", color: "#171717", marginBottom: "8px" }} />
-              <FaArrowUp className="d-none d-md-block" style={{ fontSize: "16px", color: "#171717", marginBottom: "8px" }} />
-
-              {/* Mobile */}
-              <h5 className="d-md-none" style={{ fontSize: "20px", color: "#171717" }}>
-                Store Insights
-                <br />
-                <span
-                  className="fw-normal d-block"
+            <Col
+              xs={12}
+              md={6}
+              lg={4}
+              className="mb-4 d-flex"
+            >
+              <div
+                className="p-3 p-md-4 w-100 d-flex flex-column"
+                style={{
+                  border: "1px solid #E5E5E5",
+                  borderRadius: "0",
+                  backgroundColor: "#fff",
+                  transition: "all 0.3s ease",
+                  minHeight: "300px",
+                  height: "100%"
+                }}
+              >
+                <FaArrowUp style={{ fontSize: "16px", color: "#171717", marginBottom: "12px" }} />
+                <h5
                   style={{
-                    fontSize: "16px",
+                    fontSize: "20px",
+                    fontWeight: "600",
                     color: "#171717",
-                    opacity: "0.6",
-                    textAlign: "justify",
-                    lineHeight: "1.6",
-                    marginTop: "6px",
+                    marginBottom: "12px",
                   }}
                 >
-                  Store Insights is a performance tracking platform developed by Brynex Team, enabling cluster managers to view staff efficiency, bookings, targets, and other key metrics with actionable insights.
-                </span>
-              </h5>
-
-              {/* Desktop */}
-              <div className="d-none d-md-block">
-                <h5 style={{ fontSize: "24px", color: "#171717" }}>Store Insights</h5>
+                  Store Insights
+                </h5>
                 <p
-                  className="fw-normal"
                   style={{
                     fontSize: "16px",
                     color: "#171717",
                     opacity: "0.6",
                     textAlign: "justify",
                     lineHeight: "1.6",
-                    marginTop: "8px",
+                    marginTop: "0",
                   }}
                 >
                   Store Insights is a performance tracking platform developed by Brynex Tech Team, enabling cluster managers to view staff efficiency, bookings, targets, and other key metrics with actionable insights.
