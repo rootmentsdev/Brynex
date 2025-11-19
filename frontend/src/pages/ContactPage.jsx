@@ -494,6 +494,7 @@ const ContactPage = () => {
           </Col>
         </Row>
       </div>
+      
     </Container>
   )
 }
