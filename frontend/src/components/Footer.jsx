@@ -1,19 +1,32 @@
 import React from 'react'
 import { Container, Row, Col, Button } from 'react-bootstrap'
-import { Link, useLocation } from 'react-router-dom'
 import { FaFacebook, FaLinkedinIn, FaInstagram, FaArrowRight } from 'react-icons/fa'
 
 const Footer = () => {
-  const location = useLocation()
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const headerOffset = 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
 
   const handleCareersClick = (e) => {
-    if (location.pathname === '/careers') {
-      e.preventDefault()
+    e.preventDefault()
+    scrollToSection('careers')
+    // Then scroll to current openings after a brief delay
+    setTimeout(() => {
       const element = document.getElementById('current-openings')
       if (element) {
         element.scrollIntoView({ behavior: 'smooth', block: 'start' })
       }
-    }
+    }, 500)
   }
 
   return (
@@ -33,9 +46,9 @@ const Footer = () => {
           {/* Social Media Icons Column */}
           <Col xs={12} sm={6} md={3} className="d-flex align-items-start justify-content-center justify-content-md-start mb-3 mb-md-0">
             <div className="d-flex gap-3">
-              <Link to=""><FaFacebook className="text-white" style={{ fontSize: '22px' }} /></Link>
-              <Link to="https://www.linkedin.com/company/brynex-apparels/posts/?feedView=all"><FaLinkedinIn className="text-white" style={{ fontSize: '22px' }} /></Link>
-              <Link to="https://www.instagram.com/suitorguy_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=all"><FaInstagram className="text-white" style={{ fontSize: '22px' }} /></Link>
+              <a href="#" target="_blank" rel="noopener noreferrer"><FaFacebook className="text-white" style={{ fontSize: '22px' }} /></a>
+              <a href="https://www.linkedin.com/company/brynex-apparels/posts/?feedView=all" target="_blank" rel="noopener noreferrer"><FaLinkedinIn className="text-white" style={{ fontSize: '22px' }} /></a>
+              <a href="https://www.instagram.com/suitorguy_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=all" target="_blank" rel="noopener noreferrer"><FaInstagram className="text-white" style={{ fontSize: '22px' }} /></a>
             </div>
           </Col>
 
@@ -81,36 +94,36 @@ const Footer = () => {
             <h6 className="text-white fw-bold text-uppercase mb-3 d-none d-md-block" style={{ fontSize: '14px' }}>
               QUICK LINKS
             </h6>
-            <Link to="/" className="text-white text-decoration-none mb-2 d-md-none" style={{ fontSize: '16px' }}>
+            <a href="#home" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }} className="text-white text-decoration-none mb-2 d-md-none" style={{ fontSize: '16px' }}>
               Home
-            </Link>
-            <Link to="/" className="text-white text-decoration-none mb-2 d-none d-md-block" style={{ fontSize: '14px' }}>
+            </a>
+            <a href="#home" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }} className="text-white text-decoration-none mb-2 d-none d-md-block" style={{ fontSize: '14px' }}>
               Home
-            </Link>
-            <Link to="/about" className="text-white text-decoration-none mb-2 d-md-none" style={{ fontSize: '16px' }}>
+            </a>
+            <a href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('about'); }} className="text-white text-decoration-none mb-2 d-md-none" style={{ fontSize: '16px' }}>
               About
-            </Link>
-            <Link to="/about" className="text-white text-decoration-none mb-2 d-none d-md-block" style={{ fontSize: '14px' }}>
+            </a>
+            <a href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('about'); }} className="text-white text-decoration-none mb-2 d-none d-md-block" style={{ fontSize: '14px' }}>
               About
-            </Link>
-            <Link to="/brand" className="text-white text-decoration-none mb-2 d-md-none" style={{ fontSize: '16px' }}>
+            </a>
+            <a href="#brand" onClick={(e) => { e.preventDefault(); scrollToSection('brand'); }} className="text-white text-decoration-none mb-2 d-md-none" style={{ fontSize: '16px' }}>
               Brands
-            </Link>
-            <Link to="/brand" className="text-white text-decoration-none mb-2 d-none d-md-block" style={{ fontSize: '14px' }}>
+            </a>
+            <a href="#brand" onClick={(e) => { e.preventDefault(); scrollToSection('brand'); }} className="text-white text-decoration-none mb-2 d-none d-md-block" style={{ fontSize: '14px' }}>
               Brands
-            </Link>
-            <Link to="/technology" className="text-white text-decoration-none mb-2 d-md-none" style={{ fontSize: '16px' }}>
-              Technology
-            </Link>
-            <Link to="/technology" className="text-white text-decoration-none mb-2 d-none d-md-block" style={{ fontSize: '14px' }}>
-              Technology
-            </Link>
-            <Link to="/contact" className="text-white text-decoration-none mb-2 d-md-none" style={{ fontSize: '16px' }}>
+            </a>
+            <a href="#careers" onClick={(e) => { e.preventDefault(); scrollToSection('careers'); }} className="text-white text-decoration-none mb-2 d-md-none" style={{ fontSize: '16px' }}>
+              Careers
+            </a>
+            <a href="#careers" onClick={(e) => { e.preventDefault(); scrollToSection('careers'); }} className="text-white text-decoration-none mb-2 d-none d-md-block" style={{ fontSize: '14px' }}>
+              Careers
+            </a>
+            <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }} className="text-white text-decoration-none mb-2 d-md-none" style={{ fontSize: '16px' }}>
               Contact
-            </Link>
-            <Link to="/contact" className="text-white text-decoration-none mb-2 d-none d-md-block" style={{ fontSize: '14px' }}>
+            </a>
+            <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }} className="text-white text-decoration-none mb-2 d-none d-md-block" style={{ fontSize: '14px' }}>
               Contact
-            </Link>
+            </a>
           </Col>
 
           {/* Join Our Team Column */}
@@ -127,8 +140,8 @@ const Footer = () => {
             <p className="text-white mb-3 d-none d-md-block" style={{ fontSize: '14px' }}>
               Looking for a job opportunity?
             </p>
-            <Link 
-              to="/careers" 
+            <a 
+              href="#careers" 
               onClick={handleCareersClick}
               className="text-decoration-none d-flex justify-content-center justify-content-md-start"
             >
@@ -145,7 +158,7 @@ const Footer = () => {
               >
                 See open positions <FaArrowRight />
               </Button>
-            </Link>
+            </a>
           </Col>
         </Row>
 

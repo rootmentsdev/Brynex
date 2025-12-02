@@ -196,8 +196,8 @@ const AboutPage = () => {
             lineHeight: "1.2"
           }}
         >
-          <span className='d-block'>Our</span>
-          <span className='d-block'>Leaders</span>
+          <span className='d-block'>Our Leaders</span>
+          <span className='d-block'></span>
         </h1>
         <p className="d-none d-md-block" style={{
           fontSize: "16px",
@@ -216,15 +216,15 @@ const AboutPage = () => {
     {/* Leadership Section */}
     <div className='mx-3 ms-md-5 mt-4 pb-5'>
       <Row className="d-flex flex-column flex-md-row justify-content-between align-items-start">
-        {/* First Director */}
-        <Col xs={12} md={6} className="mb-4 mb-md-0 pe-md-4">
+          {/* Second Director */}
+          <Col xs={12} md={6} className="ps-md-4">
           <h3 style={{
-            fontSize: "28px",
+            fontSize: "24px",
             fontWeight: "500",
             color: "#171717",
             marginBottom: "8px"
           }}>
-            Farok Riyas Alungal
+             Siyas Ks
           </h3>
           <p style={{
             fontSize: "16px",
@@ -232,16 +232,9 @@ const AboutPage = () => {
             opacity: "0.6",
             marginBottom: "16px"
           }}>
-            DIRECTOR
+           Co Founder & Director
           </p>
           <div className="d-flex align-items-start">
-            <div style={{
-              width: "2px",
-              backgroundColor: "#171717",
-              marginRight: "12px",
-              alignSelf: "stretch",
-              minHeight: "60px"
-            }}></div>
             <p style={{
               fontSize: "16px",
               color: "#171717",
@@ -249,48 +242,42 @@ const AboutPage = () => {
               lineHeight: "1.6",
               margin: 0
             }}>
-              "Driving innovation, structure, and growth across every brand under Brynex."
+              Building a culture where performance, creativity, and excellence meet
+            </p>
+          </div>
+        </Col>
+        {/* First Director */}
+        <Col xs={12} md={6} className="mb-4 mb-md-0 pe-md-4">
+          <h3 style={{
+            fontSize: "24px",
+            fontWeight: "500",
+            color: "#171717",
+            marginBottom: "8px"
+          }}>
+             Riyas Af
+          </h3>
+          <p style={{
+            fontSize: "16px",
+            color: "#171717",
+            opacity: "0.6",
+            marginBottom: "16px"
+          }}>
+            Co Founder & Director
+          </p>
+          <div className="d-flex align-items-start">
+            <p style={{
+              fontSize: "16px",
+              color: "#171717",
+              opacity: "0.6",
+              lineHeight: "1.6",
+              margin: 0
+            }}>
+              Driving innovation, structure, and growth across every brand under Brynex
             </p>
           </div>
         </Col>
        
-        {/* Second Director */}
-        <Col xs={12} md={6} className="ps-md-4">
-          <h3 style={{
-            fontSize: "28px",
-            fontWeight: "500",
-            color: "#171717",
-            marginBottom: "8px"
-          }}>
-            Kalathilparambil Sakariya Siyas
-          </h3>
-          <p style={{
-            fontSize: "16px",
-            color: "#171717",
-            opacity: "0.6",
-            marginBottom: "16px"
-          }}>
-            DIRECTOR
-          </p>
-          <div className="d-flex align-items-start">
-            <div style={{
-              width: "2px",
-              backgroundColor: "#171717",
-              marginRight: "12px",
-              alignSelf: "stretch",
-              minHeight: "60px"
-            }}></div>
-            <p style={{
-              fontSize: "16px",
-              color: "#171717",
-              opacity: "0.6",
-              lineHeight: "1.6",
-              margin: 0
-            }}>
-              "Building a culture where performance, creativity, and excellence meet."
-            </p>
-          </div>
-        </Col>
+      
       </Row>
     </div>
 
