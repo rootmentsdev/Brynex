@@ -1,16 +1,12 @@
 import React, { useState, useEffect } from 'react'
-import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import logo from '../assets/Logo.png';
 import '../components/Header.css';
-
-// Link is still needed for logo navigation
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [menuItemsVisible, setMenuItemsVisible] = useState(false);
-  const [activeSection, setActiveSection] = useState('home');
   const location = useLocation();
-  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -25,97 +21,14 @@ const Header = () => {
     }
   }, [isMenuOpen]);
 
-  // Track active section on scroll (only on home page)
-  useEffect(() => {
-    if (location.pathname !== '/') return;
-
-    const sections = ['home', 'about', 'brand', 'careers', 'contact'];
-    
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY + 100;
-      
-      for (const section of sections) {
-        const element = document.getElementById(section);
-        if (element) {
-          const offsetTop = element.offsetTop;
-          const offsetHeight = element.offsetHeight;
-          
-          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
-            setActiveSection(section);
-            break;
-          }
-        }
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Initial check
-    
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [location.pathname]);
-
-  // Smooth scroll to section
-  const scrollToSection = (sectionId) => {
-    if (location.pathname !== '/') {
-      // If not on home page, navigate to home first then scroll
-      navigate('/');
-      // Wait for the page to load and then scroll
-      const scrollToElement = () => {
-        const element = document.getElementById(sectionId);
-        if (element) {
-          // Scroll to top first, then to the section
-          window.scrollTo({ top: 0, behavior: 'instant' });
-          setTimeout(() => {
-            const headerOffset = 80;
-            const elementPosition = element.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-            window.scrollTo({
-              top: offsetPosition,
-              behavior: 'smooth'
-            });
-          }, 100);
-        } else {
-          // Retry if element not found yet
-          setTimeout(scrollToElement, 100);
-        }
-      };
-      setTimeout(scrollToElement, 200);
-    } else {
-      // Already on home page, just scroll
-      const element = document.getElementById(sectionId);
-      if (element) {
-        const headerOffset = 80;
-        const elementPosition = element.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: 'smooth'
-        });
-      }
-    }
-  };
-
-  const isActive = (sectionId) => {
-    if (location.pathname === '/') {
-      return activeSection === sectionId;
-    }
-    // For individual pages
-    const pathMap = {
-      'home': '/home',
-      'about': '/about',
-      'brand': '/brand',
-      'careers': '/careers',
-      'contact': '/contact'
-    };
-    return location.pathname === pathMap[sectionId];
-  };
+  const isActive = (path) => location.pathname === path;
 
   const menuItems = [
-    { sectionId: 'home', label: 'Home' },
-    { sectionId: 'about', label: 'About' },
-    { sectionId: 'brand', label: 'Brand' },
-    { sectionId: 'careers', label: 'Careers' },
-    { sectionId: 'contact', label: 'Contact' }
+    { path: '/', label: 'Home' },
+    { path: '/about', label: 'About' },
+    { path: '/brand', label: 'Brand' },
+    { path: '/careers', label: 'Careers' },
+    { path: '/contact', label: 'Contact' }
   ];
 
   return (
@@ -384,26 +297,13 @@ const Header = () => {
                   fontFamily: "'DM Sans', sans-serif",
               }} className='d-flex list-unstyled mb-0 me-5 Header-ul'>
                   {menuItems.map((item) => (
-                    <li key={item.sectionId} className='me-4'>
-                      <button 
-                        className={`text-decoration-none nav-btn ${isActive(item.sectionId) ? 'active-link' : ''}`} 
-                        onClick={() => scrollToSection(item.sectionId)}
-                        style={{
-                          background: 'none',
-                          border: 'none',
-                          padding: 0,
-                          cursor: 'pointer',
-                          font: 'inherit',
-                          color: isActive(item.sectionId) ? '#171717' : '#171717',
-                          opacity: isActive(item.sectionId) ? 1 : 0.6,
-                          fontWeight: isActive(item.sectionId) ? '600' : '400',
-                          transition: 'all 0.3s ease'
-                        }}
-                        onMouseEnter={(e) => e.currentTarget.style.opacity = '1'}
-                        onMouseLeave={(e) => e.currentTarget.style.opacity = isActive(item.sectionId) ? '1' : '0.6'}
+                    <li key={item.path} className='me-4'>
+                      <Link 
+                        className={`text-decoration-none ${isActive(item.path) ? 'active-link' : ''}`} 
+                        to={item.path}
                       >
                         {item.label}
-                      </button>
+                      </Link>
                     </li>
                   ))}
               </ul>
@@ -459,9 +359,9 @@ const Header = () => {
                       fontFamily: "'DM Sans', sans-serif",
                     }} className='list-unstyled mb-0 Header-mobile-ul'>
                         {menuItems.map((item, index) => (
-                          <React.Fragment key={item.sectionId}>
+                          <React.Fragment key={item.path}>
                             <li 
-                              className={`menu-item-wrapper ${isActive(item.sectionId) ? 'active' : ''}`}
+                              className={`menu-item-wrapper ${isActive(item.path) ? 'active' : ''}`}
                               style={{
                                 animationDelay: `${index * 0.1}s`,
                                 opacity: menuItemsVisible ? 1 : 0,
@@ -469,24 +369,15 @@ const Header = () => {
                                 transition: `opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1) ${index * 0.1}s, transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) ${index * 0.1}s`
                               }}
                             >
-                              <button 
-                                className={`text-decoration-none menu-item-link ${isActive(item.sectionId) ? 'active-link' : ''}`} 
-                                onClick={() => {
-                                  scrollToSection(item.sectionId);
-                                  toggleMenu();
-                                }}
-                                style={{
-                                  background: 'none',
-                                  border: 'none',
-                                  width: '100%',
-                                  textAlign: 'left',
-                                  cursor: 'pointer'
-                                }}
+                              <Link 
+                                className={`text-decoration-none menu-item-link ${isActive(item.path) ? 'active-link' : ''}`} 
+                                to={item.path} 
+                                onClick={toggleMenu}
                               >
                                 <span className="menu-item-text" style={{ position: 'relative', zIndex: 1 }}>
                                   {item.label}
                                 </span>
-                              </button>
+                              </Link>
                             </li>
                             {index < menuItems.length - 1 && (
                               <div 
