@@ -10,6 +10,7 @@ import PageTransition from './components/PageTransition';
 import Header from './components/Header';
 import Footer from './components/Footer'; 
 import HomePage from './pages/HomePage';
+import SinglePage from './pages/SinglePage';
 
 import './App.css';
 
@@ -21,8 +22,15 @@ function App() {
       <Header />
       <ScrollToTop />
       <Routes>
-        {/* Admin routes - Full Screen (no mobile container) */}
+        {/* Single Page Layout - Home with all sections */}
         <Route path="/" element={
+          <PageTransition>
+            <SinglePage />
+          </PageTransition>
+        } />
+        
+        {/* Individual Pages (kept for direct access) */}
+        <Route path="/home" element={
           <PageTransition>
             <HomePage />
           </PageTransition>
@@ -47,9 +55,6 @@ function App() {
             <ContactPage />
           </PageTransition>
         } />
-        
-        
-    
       </Routes>
       <Footer />
     </div>

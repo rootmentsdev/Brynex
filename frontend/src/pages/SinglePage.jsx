@@ -241,7 +241,22 @@ const SinglePage = () => {
       <section id="home">
         <Container>
           <div className='mx-3 ms-md-5 mt-4' style={{ marginBottom: '40px' }}>
-            <h1 style={{fontSize: '48px', fontWeight: '500', marginBottom: '5px', color: '#171717', lineHeight: '1.2'}}>
+            <h1 style={{
+              fontSize: '48px', 
+              fontWeight: '500', 
+              marginBottom: '5px', 
+              color: '#171717', 
+              lineHeight: '1.2'
+            }} className="d-none d-md-block">
+              Shaping the Future of <br /> Fashion & Retail
+            </h1>
+            <h1 style={{
+              fontSize: '48px', 
+              fontWeight: '500', 
+              marginBottom: '5px', 
+              color: '#171717', 
+              lineHeight: '1.2'
+            }} className="d-md-none">
               Shaping the Future of <br /> Fashion & Retail
             </h1>
             <p style={{
@@ -305,14 +320,15 @@ const SinglePage = () => {
               <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
                 <Button
                   onClick={() => scrollToSection('brand')}
-                  className='w-100 pt-3 pb-3 mb-4 w-md-auto mt-5 d-flex align-items-center justify-content-center submit-btn-desktop text-white text-decoration-none'
+                  className='w-100 pt-3 pb-3 mb-4 w-md-auto mt-5 d-flex align-items-center justify-content-center submit-btn-desktop text-white text-decoration-none text-nowrap'
                   style={{
                     width: 263,
                     borderRadius: 0,
                     backgroundColor: '#171717',
                     border: 'none',
                     transition: 'all 0.3s ease',
-                    cursor: 'pointer'
+                    cursor: 'pointer',
+                    whiteSpace: 'nowrap'
                   }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.backgroundColor = '#333';
@@ -374,15 +390,24 @@ const SinglePage = () => {
           <div className='mx-3 ms-md-5 mt-4 '>
             <div>
               <p style={{fontSize:"16px",opacity:"0.6",color:"#171717"}}>//About</p>
-              <h1 className='about-hero-title '
+              <h2 className='about-hero-title d-none d-md-block'
                 style={{
-                  fontSize: "48px", fontWeight: "500",
+                  fontSize: "46px", fontWeight: "500",
                   color: '#171717',
                   lineHeight: "1.2"
                 }}>
                 <span className='about-hero-line'>Where Fashion</span>
                 <span className='about-hero-line'>Meets Systems</span>
-              </h1>
+              </h2>
+              <h2 className='about-hero-title d-md-none'
+                style={{
+                  fontSize: "40px", fontWeight: "500",
+                  color: '#171717',
+                  lineHeight: "1.2"
+                }}>
+                <span className='about-hero-line'>Where Fashion</span>
+                <span className='about-hero-line'>Meets Systems</span>
+              </h2>
             </div>
           </div>
           <div style={{ marginTop: "20px" }} className="mx-3 ms-md-5 mb-5 pb-5">
@@ -530,8 +555,8 @@ const SinglePage = () => {
           <div className='mx-3 ms-md-5 mt-5'>
             <div>
               <p style={{ fontSize: "16px", opacity: "60%", color: "#171717" }}></p>
-              <h1
-                className="mb-4"
+              <h2
+                className="mb-4 d-none d-md-block"
                 style={{
                   fontSize: "40px",
                   fontWeight: "500",
@@ -542,7 +567,20 @@ const SinglePage = () => {
               >
                 <span className='d-block'>Our Leaders</span>
                 <span className='d-block'></span>
-              </h1>
+              </h2>
+              <h2
+                className="mb-4 d-md-none"
+                style={{
+                  fontSize: "36px",
+                  fontWeight: "500",
+                  color: "#171717",
+                  marginBottom: "5px",
+                  lineHeight: "1.2"
+                }}
+              >
+                <span className='d-block'>Our Leaders</span>
+                <span className='d-block'></span>
+              </h2>
               <p className="d-none d-md-block" style={{
                 fontSize: "16px",
                 lineHeight: "20px",
@@ -642,10 +680,14 @@ const SinglePage = () => {
           </style>
           <div className="mx-3 ms-md-5 mt-4 mb-4" >
             <p className="text-dark mb-2" style={{ fontSize: "16px", opacity: "0.6" }}>//Brands</p>
-            <h1 className="mb-3  " style={{ fontSize: "48px", lineHeight: "1.2", fontWeight: '500',color: '#171717'}}>
+            <h2 className="mb-3 d-none d-md-block" style={{ fontSize: "46px", lineHeight: "1.2", fontWeight: '500',color: '#171717'}}>
               <span className='d-block'>Explore Our</span>
               <span className='d-block'>Premium Brands</span>
-            </h1>
+            </h2>
+            <h2 className="mb-3 d-md-none" style={{ fontSize: "40px", lineHeight: "1.2", fontWeight: '500',color: '#171717'}}>
+              <span className='d-block'>Explore Our</span>
+              <span className='d-block'>Premium Brands</span>
+            </h2>
           </div>
 
           <div className="mx-3 ms-md-5 mb-4 mb-md-5">
@@ -839,10 +881,10 @@ const SinglePage = () => {
             >
               //Careers
             </p>
-            <h1
-              className="mb-3 mx-3 ms-md-5"
+            <h2
+              className="mb-3 mx-3 ms-md-5 d-none d-md-block"
               style={{
-                fontSize: "48px",
+                fontSize: "46px",
                 fontWeight: "500",
                 color: "#171717",
                 lineHeight: "1.2",
@@ -850,7 +892,18 @@ const SinglePage = () => {
             >
               <span className='d-block'>Grow With</span>
               <span className='d-block'>Brynex</span>
-            </h1>
+            </h2>
+            <h2
+              className="mb-3 mx-3 ms-md-5 d-md-none"
+              style={{
+                fontSize: "40px",
+                fontWeight: "500",
+                color: "#171717",
+                lineHeight: "1.2",
+              }}
+            >
+              Grow With Brynex
+            </h2>
             <p
               className="mx-3 ms-md-5 d-none d-md-block"
               style={{
@@ -1286,17 +1339,28 @@ const SinglePage = () => {
             >
               //Contact
             </p>
-            <h1
-              className="mb-3 mx-3 ms-md-5"
+            <h2
+              className="mb-3 mx-3 ms-md-5 d-none d-md-block"
               style={{
-                fontSize: "48px",
+                fontSize: "46px",
                 fontWeight: "500",
                 color: "#171717",
                 lineHeight: "1.2",
               }}
             >
               Let's Connect
-            </h1>
+            </h2>
+            <h2
+              className="mb-3 mx-3 ms-md-5 d-md-none"
+              style={{
+                fontSize: "40px",
+                fontWeight: "500",
+                color: "#171717",
+                lineHeight: "1.2",
+              }}
+            >
+              Let's Connect
+            </h2>
             <p
               className="mx-3 ms-md-5 d-none d-md-block"
               style={{
