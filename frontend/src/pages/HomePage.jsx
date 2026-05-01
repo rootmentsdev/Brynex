@@ -6,10 +6,10 @@ import { FaArrowRight, FaArrowUp, FaUser, FaEnvelope, FaComment } from 'react-ic
 import { Row, Col } from 'react-bootstrap';
 import { Image } from 'react-bootstrap';
 import Home from '../assets/Home.webp';
-import BrandLogo1 from '../assets/BrandLogo1.png';
+import BrandLogo1 from '../assets/BrandLogo1.jpg';
 import BrandLogo2 from '../assets/BrandLogo2.png';
-import BrandLogo3 from '../assets/BrandLogo3.png';
-import BrandLogo4 from '../assets/BrandLogo4.webp';
+import BrandLogo3 from '../assets/BrandLogo3.jpg';
+import BrandLogo4 from '../assets/BrandLogo4.jpg';
 import Founder1 from '../assets/Founder1.webp';
 import Founder2 from '../assets/Founder2.webp';
 
@@ -199,22 +199,22 @@ const HomePage = () => {
                 </Row>
                 <Row className='justify-content-center align-items-center g-4'>
                     <Col xs={6} md={3} className='text-center'>
-                        <Image src={BrandLogo1} alt="Suitor Guy" fluid className='img-fluid' />
+                        <Image src={BrandLogo1} alt="Suitor Guy" fluid className='img-fluid' style={{ maxHeight: '110px', width: 'auto', objectFit: 'contain' }} />
                     </Col>
                     <Col xs={6} md={3} className='text-center'>
-                        <Image src={BrandLogo2} alt="ZORUCCI PREMIUM RENTALS" fluid className='img-fluid' />
+                        <Image src={BrandLogo2} alt="ZORUCCI PREMIUM RENTALS" fluid className='img-fluid' style={{ maxHeight: '80px', width: 'auto', objectFit: 'contain' }} />
                     </Col>
                     <Col xs={6} md={3} className='text-center'>
-                        <Image src={BrandLogo3} alt="Jewels by ZORUCCI" fluid className='img-fluid' />
+                        <Image src={BrandLogo3} alt="Jewels by ZORUCCI" fluid className='img-fluid' style={{ maxHeight: '110px', width: 'auto', objectFit: 'contain' }} />
                     </Col>
                     <Col xs={6} md={3} className='text-center'>
-                        <Image src={BrandLogo4} alt="dappr SQUAD" fluid className='img-fluid' />
+                        <Image src={BrandLogo4} alt="dappr SQUAD" fluid className='img-fluid' style={{ maxHeight: '110px', width: 'auto', objectFit: 'contain' }} />
                     </Col>
                 </Row>
             </div>
 
             {/* Our Core Pillars Section */}
-            <div className='mx-3 ms-md-5 mt-5 mb-5'>
+            <div className='mx-3 ms-md-5 mt-5 mb-5' style={{ paddingTop: '3rem' }}>
                 <Row>
                     <Col xs={12} className='mb-5'>
                         <h2 className='text-dark text-start' style={{
