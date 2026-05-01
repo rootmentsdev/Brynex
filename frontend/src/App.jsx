@@ -3,7 +3,6 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import AboutPage from './pages/AboutPage';
 import BrandPage from './pages/BrandPage';
-import TechnologyPage from './pages/TechnologyPage';
 import CareersPage from './pages/CareersPage';
 import ContactPage from './pages/ContactPage.jsx';  
 import ScrollToTop from './components/ScrollToTop';
@@ -36,11 +35,6 @@ function App() {
         <Route path="/brand" element={
           <PageTransition>
             <BrandPage />
-          </PageTransition>
-        } />
-        <Route path="/technology" element={
-          <PageTransition>
-            <TechnologyPage />
           </PageTransition>
         } />
         <Route path="/careers" element={
