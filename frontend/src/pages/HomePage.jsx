@@ -199,7 +199,7 @@ const HomePage = () => {
                 </Row>
                 <Row className='justify-content-center align-items-center g-4'>
                     <Col xs={6} md={3} className='text-center'>
-                        <Image src={BrandLogo1} alt="Suitor Guy" fluid className='img-fluid' style={{ maxHeight: '110px', width: 'auto', objectFit: 'contain' }} />
+                        <Image src={BrandLogo1} alt="Suitor Guy" fluid className='img-fluid' style={{ maxHeight: '140px', width: 'auto', objectFit: 'contain' }} />
                     </Col>
                     <Col xs={6} md={3} className='text-center'>
                         <Image src={BrandLogo2} alt="ZORUCCI PREMIUM RENTALS" fluid className='img-fluid' style={{ maxHeight: '80px', width: 'auto', objectFit: 'contain' }} />
